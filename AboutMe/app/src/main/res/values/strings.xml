@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AboutMe</string>
+    <string name="name">Raquel Corrales</string>
+    <string name="yellow_star">Yellow star</string>
+
+
+    <string name="bio">Hi, my name is Raquel.
+    \n\nI am an international student from Costa Rica.
+    I am in North Central College as a part of an exchange student program.
+    \n\n Fun fact is that I love sports, I use to practice triathlon.
+    \n\n I like the food here, even if it is different from what I used to eat in my home
+    \n\n The most difficult part of this experience it\'s been the cold
+    because I come from a tropical country where the temperatures are higher than here,
+        for example my country is usually 23°C \n\n</string>
+
+
+</resources>
