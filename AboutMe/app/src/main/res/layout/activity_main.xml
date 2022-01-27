@@ -25,7 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/layout_margin"
         android:contentDescription="@string/yellow_star"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="ImageContrastCheck" />
 
     <ScrollView
         android:id="@+id/bio_scroll"
@@ -41,6 +42,7 @@
                 android:id="@+id/arrow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/nameimage"
                 app:srcCompat="@android:drawable/ic_menu_upload" />
 
             <TextView
