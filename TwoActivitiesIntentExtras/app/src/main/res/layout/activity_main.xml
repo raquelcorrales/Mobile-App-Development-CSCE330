@@ -16,7 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="launchFirstActivity"/>
 
     <Button
         android:id="@+id/button2"
@@ -29,7 +30,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button1" />
+        app:layout_constraintTop_toTopOf="@+id/button1"
+        android:onClick="launchSecondActivity"/>
 
     <Button
         android:id="@+id/button3"
@@ -41,5 +43,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+            android:onClick="launchThirdActivity"/>
 </android.support.constraint.ConstraintLayout>
