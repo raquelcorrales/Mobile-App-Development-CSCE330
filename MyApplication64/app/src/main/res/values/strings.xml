@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">My Application64</string>
+    <string name="this_is_another_activity">This is another Activity2</string>
+    <string name="this_is_first_activity">This is first Activity</string>
+    <string name="start_another_activity">Start Another Activity</string>
+
+
+    <string name="display_one">Costa Rica occupies a privileged place in the heart of Central
+        America for the richness of its beaches, comprises 1,228 km of coastline, of which 1,016 km
+        are from the Pacific coast and 212 km in the Caribbean Sea, you are separated by
+        just three hours in vehicle or 45 minutes by air from San José. It is estimated that 600
+        beaches surround the entire national territory. This wealth allows the enjoyment of the
+        beach as a means of recreation, sport and rest. These are wooded beaches, with natural
+        spaces and relatively little influx of tourists.
+        The Caribbean region stands out for its variety of marine ecosystems and its white- and
+        black-sand beaches, ideal for activities centered around nature and the ocean, including
+        surfing, diving in clear water, basking in the sun and hiking along the coast.</string>
+
+    <string name="display_two">When visiting any beach in Costa Rica, keep the following security
+        precautions in mind: Take care of your belongings while enjoying the sea or leave them
+        somewhere they can be watched. Always use sunscreen to avoid burns on your skin. When
+        possible, do not swim on your own and consult the authorities regarding beach conditions.
+        Be aware of warning flags on the beach. Do not enter the ocean if you do not know how to
+        swim. If surfing as a beginner, always be accompanied by an instructor.</string>
+
+    <string name="display_three">The Pacific coast contains major tourism centers and beaches
+        that are favorites among surfers, including Esterillos, Jacó, Hermosa, Boca Barranca,
+        as well as the Pavones Sector and the surroundings of the Marino Ballena National Park,
+        with its famous long left wave. Near the beach areas you will find a wide variety of options
+        to stay and taste Costa Rican cuisine. Among the variety of hotels you can enjoy are:
+        all inclusive option, honeymoon hotels, eco resort, family hotels, 5 star hotels, etc.
+        In addition to the typical food you can also enjoy restaurants that specialize
+        in international dishes.</string>
+</resources>
