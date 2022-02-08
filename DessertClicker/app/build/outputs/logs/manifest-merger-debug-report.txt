@@ -1,0 +1,184 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:17:1-37:12
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:17:1-37:12
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:17:1-37:12
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.databinding:databinding-adapters:7.0.4] /home/rscorralesmarin/.gradle/caches/transforms-3/ada057f7bc77f995f323b1c8ce74730f/transformed/databinding-adapters-7.0.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.databinding:databinding-ktx:7.0.4] /home/rscorralesmarin/.gradle/caches/transforms-3/e9fcabbd5e08dbc802379a933ea009f6/transformed/jetified-databinding-ktx-7.0.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.databinding:databinding-runtime:7.0.4] /home/rscorralesmarin/.gradle/caches/transforms-3/574673902ee185bbe24227cf938a51b6/transformed/databinding-runtime-7.0.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-rc1] /home/rscorralesmarin/.gradle/caches/transforms-3/fd75cb6d756dbc9c61f8f63630c8454e/transformed/constraintlayout-2.0.0-rc1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/5b99f50e10f1e02e7127fae489430061/transformed/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.jakewharton.timber:timber:4.7.1] /home/rscorralesmarin/.gradle/caches/transforms-3/612602d98b8dae190028d5ec6f59d083/transformed/jetified-timber-4.7.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/b3851245ef6a82982b04ec1d02f0200f/transformed/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/3012f0b906e8a3e3f027310080435770/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/2db5f73c188fbe9bbc59c8481a94bb10/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.fragment:fragment:1.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/2d7abc83d9f65a8aae647affde400774/transformed/fragment-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/525a9510b15c6ec750f3e6f3a9ae5c82/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/710aaa6d4b631157dad471926306d051/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/3e84c537edba31894b18e9ec1c768547/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/6e21a4945c90103909453fcf54788c93/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/d4b09bee2033537e0bd0b0841ba49a73/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7b38fd7e89d5e2436bbd34bdd415cc73/transformed/jetified-activity-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.0] /home/rscorralesmarin/.gradle/caches/transforms-3/48a43abd73611afcf59887dec312de94/transformed/core-1.3.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/f3744ee2243df5e8f48cd2706f832750/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.databinding:viewbinding:7.0.4] /home/rscorralesmarin/.gradle/caches/transforms-3/a9363be6471249806e50c529150ff99b/transformed/jetified-viewbinding-7.0.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/4c830e9491d938b4cf766fdb431599e9/transformed/jetified-lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7000a0af400728c7d1b62090c948886b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/f0f29cfa9e921c4af0c445304d90200f/transformed/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/1987819f5ed1175f8501f32b4f8fc959/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/efa71e52c0a905fca5d05dddd37c87ba/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/05bc10c7b33a59721c15ffcb8ea2ff00/transformed/lifecycle-livedata-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/f34ce7309e14840595e7b409e773553e/transformed/jetified-lifecycle-viewmodel-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/3c90aab6ff4669eb9e745cb82d2d32fe/transformed/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/0fecf0f40606e08fee3cc90f3452dacb/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/645d3136edbeab207a4753a240ead4ce/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/b8f269710a1e9974e7c26d8e6394149c/transformed/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/fb449e49600e93c72255ca3289253a82/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:17:1-37:12
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:17:1-37:12
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:17:1-37:12
+	package
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:18:5-49
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:17:1-37:12
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:17:1-37:12
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:17:11-69
+application
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:20:5-35:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-rc1] /home/rscorralesmarin/.gradle/caches/transforms-3/fd75cb6d756dbc9c61f8f63630c8454e/transformed/constraintlayout-2.0.0-rc1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-rc1] /home/rscorralesmarin/.gradle/caches/transforms-3/fd75cb6d756dbc9c61f8f63630c8454e/transformed/constraintlayout-2.0.0-rc1/AndroidManifest.xml:9:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.1] /home/rscorralesmarin/.gradle/caches/transforms-3/612602d98b8dae190028d5ec6f59d083/transformed/jetified-timber-4.7.1/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.1] /home/rscorralesmarin/.gradle/caches/transforms-3/612602d98b8dae190028d5ec6f59d083/transformed/jetified-timber-4.7.1/AndroidManifest.xml:7:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/2db5f73c188fbe9bbc59c8481a94bb10/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/2db5f73c188fbe9bbc59c8481a94bb10/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.core:core:1.3.0] /home/rscorralesmarin/.gradle/caches/transforms-3/48a43abd73611afcf59887dec312de94/transformed/core-1.3.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.0] /home/rscorralesmarin/.gradle/caches/transforms-3/48a43abd73611afcf59887dec312de94/transformed/core-1.3.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/f3744ee2243df5e8f48cd2706f832750/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/f3744ee2243df5e8f48cd2706f832750/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7000a0af400728c7d1b62090c948886b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7000a0af400728c7d1b62090c948886b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.0] /home/rscorralesmarin/.gradle/caches/transforms-3/48a43abd73611afcf59887dec312de94/transformed/core-1.3.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:26:9-35
+	android:label
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:24:9-41
+	android:roundIcon
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:25:9-61
+	android:icon
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:23:9-50
+	android:allowBackup
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:22:9-35
+	android:theme
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:27:9-40
+	android:name
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:21:9-43
+activity#com.example.android.dessertclicker.MainActivity
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:28:9-34:20
+	android:name
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:28:19-81
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:29:13-33:29
+action#android.intent.action.MAIN
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml:32:27-74
+uses-sdk
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:7.0.4] /home/rscorralesmarin/.gradle/caches/transforms-3/ada057f7bc77f995f323b1c8ce74730f/transformed/databinding-adapters-7.0.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-adapters:7.0.4] /home/rscorralesmarin/.gradle/caches/transforms-3/ada057f7bc77f995f323b1c8ce74730f/transformed/databinding-adapters-7.0.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-ktx:7.0.4] /home/rscorralesmarin/.gradle/caches/transforms-3/e9fcabbd5e08dbc802379a933ea009f6/transformed/jetified-databinding-ktx-7.0.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-ktx:7.0.4] /home/rscorralesmarin/.gradle/caches/transforms-3/e9fcabbd5e08dbc802379a933ea009f6/transformed/jetified-databinding-ktx-7.0.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-runtime:7.0.4] /home/rscorralesmarin/.gradle/caches/transforms-3/574673902ee185bbe24227cf938a51b6/transformed/databinding-runtime-7.0.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-runtime:7.0.4] /home/rscorralesmarin/.gradle/caches/transforms-3/574673902ee185bbe24227cf938a51b6/transformed/databinding-runtime-7.0.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-rc1] /home/rscorralesmarin/.gradle/caches/transforms-3/fd75cb6d756dbc9c61f8f63630c8454e/transformed/constraintlayout-2.0.0-rc1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-rc1] /home/rscorralesmarin/.gradle/caches/transforms-3/fd75cb6d756dbc9c61f8f63630c8454e/transformed/constraintlayout-2.0.0-rc1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/5b99f50e10f1e02e7127fae489430061/transformed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/5b99f50e10f1e02e7127fae489430061/transformed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.jakewharton.timber:timber:4.7.1] /home/rscorralesmarin/.gradle/caches/transforms-3/612602d98b8dae190028d5ec6f59d083/transformed/jetified-timber-4.7.1/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton.timber:timber:4.7.1] /home/rscorralesmarin/.gradle/caches/transforms-3/612602d98b8dae190028d5ec6f59d083/transformed/jetified-timber-4.7.1/AndroidManifest.xml:5:5-43
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/b3851245ef6a82982b04ec1d02f0200f/transformed/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/b3851245ef6a82982b04ec1d02f0200f/transformed/jetified-appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/3012f0b906e8a3e3f027310080435770/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/3012f0b906e8a3e3f027310080435770/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/2db5f73c188fbe9bbc59c8481a94bb10/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/2db5f73c188fbe9bbc59c8481a94bb10/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/2d7abc83d9f65a8aae647affde400774/transformed/fragment-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/2d7abc83d9f65a8aae647affde400774/transformed/fragment-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/525a9510b15c6ec750f3e6f3a9ae5c82/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/525a9510b15c6ec750f3e6f3a9ae5c82/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/710aaa6d4b631157dad471926306d051/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/710aaa6d4b631157dad471926306d051/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/3e84c537edba31894b18e9ec1c768547/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/3e84c537edba31894b18e9ec1c768547/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/6e21a4945c90103909453fcf54788c93/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/6e21a4945c90103909453fcf54788c93/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/d4b09bee2033537e0bd0b0841ba49a73/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/d4b09bee2033537e0bd0b0841ba49a73/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7b38fd7e89d5e2436bbd34bdd415cc73/transformed/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7b38fd7e89d5e2436bbd34bdd415cc73/transformed/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] /home/rscorralesmarin/.gradle/caches/transforms-3/48a43abd73611afcf59887dec312de94/transformed/core-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] /home/rscorralesmarin/.gradle/caches/transforms-3/48a43abd73611afcf59887dec312de94/transformed/core-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/f3744ee2243df5e8f48cd2706f832750/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/f3744ee2243df5e8f48cd2706f832750/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.0.4] /home/rscorralesmarin/.gradle/caches/transforms-3/a9363be6471249806e50c529150ff99b/transformed/jetified-viewbinding-7.0.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:7.0.4] /home/rscorralesmarin/.gradle/caches/transforms-3/a9363be6471249806e50c529150ff99b/transformed/jetified-viewbinding-7.0.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/4c830e9491d938b4cf766fdb431599e9/transformed/jetified-lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/4c830e9491d938b4cf766fdb431599e9/transformed/jetified-lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7000a0af400728c7d1b62090c948886b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7000a0af400728c7d1b62090c948886b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/f0f29cfa9e921c4af0c445304d90200f/transformed/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/f0f29cfa9e921c4af0c445304d90200f/transformed/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/1987819f5ed1175f8501f32b4f8fc959/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/1987819f5ed1175f8501f32b4f8fc959/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/efa71e52c0a905fca5d05dddd37c87ba/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/efa71e52c0a905fca5d05dddd37c87ba/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/05bc10c7b33a59721c15ffcb8ea2ff00/transformed/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/05bc10c7b33a59721c15ffcb8ea2ff00/transformed/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/f34ce7309e14840595e7b409e773553e/transformed/jetified-lifecycle-viewmodel-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/f34ce7309e14840595e7b409e773553e/transformed/jetified-lifecycle-viewmodel-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/3c90aab6ff4669eb9e745cb82d2d32fe/transformed/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/3c90aab6ff4669eb9e745cb82d2d32fe/transformed/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/0fecf0f40606e08fee3cc90f3452dacb/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/0fecf0f40606e08fee3cc90f3452dacb/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/645d3136edbeab207a4753a240ead4ce/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/rscorralesmarin/.gradle/caches/transforms-3/645d3136edbeab207a4753a240ead4ce/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/b8f269710a1e9974e7c26d8e6394149c/transformed/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/b8f269710a1e9974e7c26d8e6394149c/transformed/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/fb449e49600e93c72255ca3289253a82/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-3/fb449e49600e93c72255ca3289253a82/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/src/main/AndroidManifest.xml
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7000a0af400728c7d1b62090c948886b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7000a0af400728c7d1b62090c948886b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7000a0af400728c7d1b62090c948886b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7000a0af400728c7d1b62090c948886b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/rscorralesmarin/.gradle/caches/transforms-3/7000a0af400728c7d1b62090c948886b/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79

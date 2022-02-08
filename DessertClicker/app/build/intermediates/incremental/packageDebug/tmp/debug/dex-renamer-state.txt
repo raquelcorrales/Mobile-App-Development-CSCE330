@@ -1,0 +1,4 @@
+#Tue Feb 08 15:24:54 CST 2022
+base.0=/home/rscorralesmarin/Desktop/RaquelC330/DessertClicker/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
