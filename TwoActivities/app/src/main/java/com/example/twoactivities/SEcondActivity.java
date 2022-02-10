@@ -1,6 +1,6 @@
 package com.example.twoactivities;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 
@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class SEcondActivity extends AppCompatActivity {
     public static final String EXTRA_REPLY =
-            "com.example.twoactivities.extra.REPLY";
+            "com.example.android.twoactivities.extra.REPLY";
     private EditText mReply;
 
     @Override
@@ -31,25 +31,5 @@ public class SEcondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply);
         setResult(RESULT_OK, replyIntent);
         finish();
-    }
-}
-
-
-import android.content.Intent;
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
-        import android.widget.TextView;
-
-public class SecondActivity extends AppCompatActivity {
-    private TextView displayText;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
-        displayText = findViewById(R.id.display_text);
-        Intent intent = getIntent();
-        String display = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        displayText.setText(display);
     }
 }

@@ -1,8 +1,9 @@
 package com.example.twoactivities;
-
+import androidx.appcompat.app.AppCompatActivity;
+import android.app.Instrumentation;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -21,6 +22,21 @@ public class MainActivity extends AppCompatActivity {
     private TextView mReplyHeadTextView;
     private TextView mReplyTextView;
 
+
+
+    ActivityResultLauncher<Intent> startForResult = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>(){
+        @Override
+        public void onActivityResult (Instrumentation.ActivityResult result){
+            if (result != null && result.getResultCode() == RESULT_OK) {
+                String reply =
+                        data.getStringExtra(SEcondActivity.EXTRA_REPLY);
+                mReplyHeadTextView.setVisibility(View.VISIBLE);
+                mReplyTextView.setText(reply);
+                mReplyTextView.setVisibility(View.VISIBLE);
+            }
+        }
+    });
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,23 +51,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SEcondActivity.class);
         String message = mMessageEditText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
-        startActivityForResult(intent, TEXT_REQUEST);
+        startForResult.launch(intent);
     }
 
 
-    @Override
-    public void onActivityResult(int requestCode,
-                                 int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == TEXT_REQUEST) {
-            if (resultCode == RESULT_OK) {
-                String reply =
-                        data.getStringExtra(SEcondActivity.EXTRA_REPLY);
-                mReplyHeadTextView.setVisibility(View.VISIBLE);
-                mReplyTextView.setText(reply);
-                mReplyTextView.setVisibility(View.VISIBLE);
-            }
-        }
-    }
+
 
 }
+
