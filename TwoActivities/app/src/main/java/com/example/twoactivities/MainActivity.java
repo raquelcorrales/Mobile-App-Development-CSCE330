@@ -1,9 +1,13 @@
 package com.example.twoactivities;
+
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
-import android.app.Instrumentation;
+
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -23,16 +27,16 @@ public class MainActivity extends AppCompatActivity {
     private TextView mReplyTextView;
 
 
-
-    ActivityResultLauncher<Intent> startForResult = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>(){
+    ActivityResultLauncher<Intent> startForResult = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
         @Override
-        public void onActivityResult (Instrumentation.ActivityResult result){
+        public void onActivityResult(ActivityResult result) {
             if (result != null && result.getResultCode() == RESULT_OK) {
-                String reply =
-                        data.getStringExtra(SEcondActivity.EXTRA_REPLY);
-                mReplyHeadTextView.setVisibility(View.VISIBLE);
-                mReplyTextView.setText(reply);
-                mReplyTextView.setVisibility(View.VISIBLE);
+                if (result.getData() != null && result.getData().getStringExtra(SEcondActivity.EXTRA_REPLY) != null) {
+                    String reply = result.getData().getStringExtra(SEcondActivity.EXTRA_REPLY);
+                    mReplyHeadTextView.setVisibility(View.VISIBLE);
+                    mReplyTextView.setText(reply);
+                    mReplyTextView.setVisibility(View.VISIBLE);
+                }
             }
         }
     });
@@ -53,9 +57,6 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startForResult.launch(intent);
     }
-
-
-
 
 }
 
