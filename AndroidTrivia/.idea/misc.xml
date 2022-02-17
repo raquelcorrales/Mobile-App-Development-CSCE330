@@ -5,6 +5,9 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.29030797101449274" />
         <entry key="app/src/main/res/layout/fragment_about.xml" value="0.29030797101449274" />
+        <entry key="app/src/main/res/layout/fragment_rules.xml" value="0.20260416666666667" />
+        <entry key="app/src/main/res/menu/navdrawer_menu.xml" value="0.36302083333333335" />
+        <entry key="app/src/main/res/menu/options_menu.xml" value="0.20260416666666667" />
       </map>
     </option>
   </component>
