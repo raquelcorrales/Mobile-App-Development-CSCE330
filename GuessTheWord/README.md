@@ -1,13 +1,13 @@
-ViewModel and ViewModelFactory - Starter Code
+ViewModel and LiveData with Data Binding - Solution Code
 ==================================
 
-Use as starter code for the ViewModel codelab.
+This is the starter code for the ViewModel and LiveData with Data Binding codelab.
 
 Introduction
 ------------
 
-This starter app is a two player game, GuessTheWord. It is a word guessing app you can play with one or more friends. To play, hold the device in landscape, facing away from you with your thumbs on the **Skip** and **Got It** buttons. Your friends can then give you clues to help you guess the word. If you get the word right, press **Got It**. If you're stuck, press **Skip**.
-You will modify the app to use Architecture components and best practices.
+This starter app is a two player game, GuessTheWord. It is a word guessing app you can play with one or more friends. To play, hold the device in landscape, facing away from you with your thumbs on the **Skip** and **Got It** buttons. Your friends can then give you clues to help you guess the word. If you get the word right, press **Got It**. If you're stuck, press **Skip** or you can use the **End** button to end the game.
+This code demostrates how to use Data Binding with the Android Architecture components, LiveData and ViewModel.
 
 Pre-requisites
 --------------
