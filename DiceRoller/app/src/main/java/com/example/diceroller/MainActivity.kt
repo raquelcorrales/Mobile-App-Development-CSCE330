@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
             var resultInt = resultText.text.toString().toInt()
 
-            if (resultInt < 6) {
+            if (resultInt < 10) {
                 resultInt++
                 resultText.text = resultInt.toString()
             }
