@@ -12,7 +12,7 @@ const val EXTRA_MESSAGE = "com.example.twoactivitiesintentextras.MESSAGE"
 
 class MainActivity : AppCompatActivity() {
 
-
+    private val KEY_INDEX = "index"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
