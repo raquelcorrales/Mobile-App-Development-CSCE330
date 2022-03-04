@@ -9,7 +9,8 @@ import android.widget.Toast
 
 const val KEY_TIMER_SECONDS = "timer_seconds_key"
 const val EXTRA_MESSAGE = "com.example.hellotoast.MESSAGE"
-
+private const val STATE_COUNTER = "counter"
+const val KEY_REVENUE = "revenue_key"
 class MainActivity : AppCompatActivity() {
     private var mCount = 0
     private lateinit var mShowCount: TextView
@@ -26,15 +27,23 @@ class MainActivity : AppCompatActivity() {
         val toast_Button: Button = findViewById(R.id.button_toast)
         toast_Button.setOnClickListener { showToast() }
 
+
+
+
+
+
     }
 
     private fun showToast() {
+        // delete the lines
        // val toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT)
        // toast.show()
 
-
+        // first convert the mCount to a string value
+        val count = mCount.toString()
+        // using "intent" value I passed the count and I start the second activity
         val intent = Intent(this, HelloActivity::class.java).apply {
-            putExtra(EXTRA_MESSAGE, mCount)
+            putExtra(EXTRA_MESSAGE, count)
         }
         startActivity(intent)
     }
@@ -47,9 +56,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
 
 
-    }
 }
