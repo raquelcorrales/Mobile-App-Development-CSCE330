@@ -1,3 +1,5 @@
+package com.example.android.trackmysleepquality
+
 import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
@@ -5,7 +7,14 @@ import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
 
-
+/*
+    To test LiveData it's recommended you do two things:
+        Use InstantTaskExecutorRule
+        Ensure LiveData observation
+    These two things are explained in this codelab:
+    https://developer.android.com/codelabs/advanced-android-kotlin-training-testing-basics#8
+    The code for this extension function is also described in the above link.
+ */
 @VisibleForTesting(otherwise = VisibleForTesting.NONE)
 fun <T> LiveData<T>.getOrAwaitValue(
     time: Long = 2,

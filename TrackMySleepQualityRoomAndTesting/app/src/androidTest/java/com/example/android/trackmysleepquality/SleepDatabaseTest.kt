@@ -100,14 +100,22 @@ class SleepDatabaseTest {
     @Test
     @Throws(Exception::class)
     fun clear() = runBlocking {
-        val night = SleepNight(sleepQuality = 9)
+        sleepDao.insert(SleepNight())
+        sleepDao.insert(SleepNight())
+        sleepDao.insert(SleepNight())
 
-        // When
-        sleepDao.clear()
+        val allNights = sleepDao.getAllNights()
+        allNights.getOrAwaitValue()
+        assertThat(allNights.value?.isNotEmpty(), `is`(true))
 
-        // Then
-        val empty = sleepDao.getTonight()
-        assertThat(empty?.sleepQuality, `is`(9))
+
+        // When data is cleared from the table
+        val night = sleepDao.clear()
+
+        //Then the data should be gone
+        val clearedNights = sleepDao.getAllNights()
+        clearedNights.getOrAwaitValue()
+        assertThat(clearedNights.value?.isEmpty(), `is`(true))
     }
 
     // Test for getTonight
