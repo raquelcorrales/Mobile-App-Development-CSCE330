@@ -65,10 +65,28 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
             android:text="@string/play_button"
+            android:textColor="#4A148C"
             android:theme="@style/GoButton"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="104dp"
+            android:minHeight="48dp"
+            android:text="Timer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
