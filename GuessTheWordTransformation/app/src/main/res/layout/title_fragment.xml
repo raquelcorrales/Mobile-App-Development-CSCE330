@@ -18,11 +18,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/title_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".screens.title.TitleFragment">
+
+
 
         <TextView
             android:id="@+id/get_ready_text"
@@ -83,21 +86,19 @@
             app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <com.google.android.material.slider.Slider
-            android:id="@+id/slider"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/slider_desc"
-            android:value="20.0"
-            android:valueFrom="0.0"
-            android:valueTo="100.0"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
-
-
-
-
+<!--        <com.google.android.material.slider.Slider-->
+<!--            android:id="@+id/slider"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="228dp"-->
+<!--            android:contentDescription="@string/slider_desc"-->
+<!--            android:value="20.0"-->
+<!--            android:valueFrom="0.0"-->
+<!--            android:valueTo="100.0"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent" />-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

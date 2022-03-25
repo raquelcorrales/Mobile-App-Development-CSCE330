@@ -17,13 +17,7 @@
 package com.example.android.guesstheword
 
 import android.os.Bundle
-import android.view.View
-import android.widget.Switch
-import android.widget.TextView
-import android.widget.Toast
-import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
-import kotlin.concurrent.timer
 
 /**
  * Creates an Activity that hosts all of the fragments in the app
@@ -33,23 +27,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
-
-        val time = findViewById<TextView>(R.id.timer_text)
-        val toggle = findViewById<Switch>(R.id.switch1)
-
-//        toggle.setOnCheckedChangeListener { _, isChecked ->
-//            if (isChecked) {
-//                // The timer is enabled
-//                //time.setVisibility(View.VISIBLE)
-//            } else {
-//                // The timer is disabled
-//                //time.setVisibility(View.INVISIBLE)
-//            }
-//        }
-
-
-
-
-
     }
+
 }
