@@ -16,6 +16,7 @@
 
 package com.example.android.trackmysleepquality
 
+import android.app.usage.UsageEvents
 import androidx.annotation.VisibleForTesting
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.LiveData
@@ -40,8 +41,7 @@ import java.io.IOException
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeoutException
 import org.hamcrest.MatcherAssert.assertThat
-import org.hamcrest.Matchers.`is`
-import org.hamcrest.Matchers.notNullValue
+import org.hamcrest.Matchers.*
 
 
 /**
@@ -81,7 +81,7 @@ class SleepDatabaseTest {
     }
 
 
-
+    // Test for insertAndGetNight
     @Test
     @Throws(Exception::class)
     fun insertAndGetNight() = runBlocking {
@@ -96,43 +96,92 @@ class SleepDatabaseTest {
         assertThat(tonight?.sleepQuality, `is`(9))
     }
 
+    // Test for clear
     @Test
     @Throws(Exception::class)
-    fun clear() {
-        val night = SleepNight()
-        sleepDao.insert(night)
-        val tonight = sleepDao.getTonight()
-        assertEquals(tonight?.sleepQuality, -1)
+    fun clear() = runBlocking {
+        val night = SleepNight(sleepQuality = 9)
+
+        // When
+        sleepDao.clear()
+
+        // Then
+        val empty = sleepDao.getTonight()
+        assertThat(empty?.sleepQuality, `is`(9))
     }
 
+    // Test for getTonight
     @Test
     @Throws(Exception::class)
-    fun getTonight() {
-        val night = SleepNight()
+    fun getTonight() = runBlocking {
+        val night = SleepNight(sleepQuality = 9)
+
+        // When
         sleepDao.insert(night)
+
+        // Then
         val tonight = sleepDao.getTonight()
-        assertEquals(tonight?.sleepQuality, -1)
+        assertThat(tonight?.sleepQuality, `is`(9))
     }
 
+    // Test for updateNight
     @Test
     @Throws(Exception::class)
-    fun updateNight() {
-        val night = SleepNight()
+    fun updateNight() = runBlocking {
+        val night = SleepNight(sleepQuality = 5)
+
+        // When
         sleepDao.insert(night)
+
+        // Then
         val tonight = sleepDao.getTonight()
-        assertEquals(tonight?.sleepQuality, -1)
+        assertThat(tonight?.sleepQuality, `is`(5))
     }
 
 
+//    // Test for getAllNights
+//    @Test
+//    fun getAllNights()= runBlocking {
+//
+//        // Given a fresh ViewModel
+//        val tasksViewModel = TasksViewModel(ApplicationProvider.getAllnights())
+//
+//
+//        // Create observer - no need for it to do anything!
+//        val observer = Observer<UsageEvents.Event<Unit>> {}
+//        try {
+//
+//            // Observe the LiveData forever
+//            tasksViewModel.newTaskEvent.observeForever(observer)
+//
+//            // When adding a new task
+//            tasksViewModel.addNewTask()
+//
+//            // Then the new task event is triggered
+//            val value = tasksViewModel.newTaskEvent.value
+//            assertThat(value?.getContentIfNotHandled(), (not(nullValue())))
+//
+//        } finally {
+//            // Whatever happens, don't forget to remove the observer!
+//            tasksViewModel.newTaskEvent.removeObserver(observer)
+//        }
+//    }
 
+    // Test for getByNightID
     @Test
     @Throws(Exception::class)
-    fun getByNightID() {
-        val night = SleepNight()
+    fun getByNightID() = runBlocking {
+        val night = SleepNight(sleepQuality = 9)
+
+        // When
         sleepDao.insert(night)
+
+        // Then
         val tonight = sleepDao.getTonight()
-        assertEquals(tonight?.sleepQuality, -1)
+        assertThat(tonight?.sleepQuality, `is`(9))
     }
+
+
 
 
 
