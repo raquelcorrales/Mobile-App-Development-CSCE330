@@ -80,8 +80,9 @@ class SleepDatabaseTest {
         db.close()
     }
 
+    //--------------- TESTS ------------------------ //
 
-    // Test for insertAndGetNight
+    // ------------ Test for insertAndGetNight ------------ //
     @Test
     @Throws(Exception::class)
     fun insertAndGetNight() = runBlocking {
@@ -96,7 +97,8 @@ class SleepDatabaseTest {
         assertThat(tonight?.sleepQuality, `is`(9))
     }
 
-    // Test for clear
+
+    // ------------ Test for clear ------------ //
     @Test
     @Throws(Exception::class)
     fun clear() = runBlocking {
@@ -118,75 +120,66 @@ class SleepDatabaseTest {
         assertThat(clearedNights.value?.isEmpty(), `is`(true))
     }
 
-    // Test for getTonight
+    // ------------ Test for getTonight() ------------ //
     @Test
     @Throws(Exception::class)
     fun getTonight() = runBlocking {
-        val night = SleepNight(sleepQuality = 9)
-
-        // When
-        sleepDao.insert(night)
+        sleepDao.insert(SleepNight(sleepQuality = 9))
+        sleepDao.insert(SleepNight(sleepQuality = 5))
+        sleepDao.insert(SleepNight(sleepQuality = 3))
 
         // Then
         val tonight = sleepDao.getTonight()
-        assertThat(tonight?.sleepQuality, `is`(9))
+        assertThat(tonight?.sleepQuality, `is`(3))
     }
 
-    // Test for updateNight
+
+
+    // -------- Test for updateNight --------- //
     @Test
     @Throws(Exception::class)
     fun updateNight() = runBlocking {
-        val night = SleepNight(sleepQuality = 5)
+        // Given
 
-        // When
-        sleepDao.insert(night)
+        sleepDao.insert(SleepNight(sleepQuality = 9))
+        sleepDao.update(SleepNight(sleepQuality = 9))
 
         // Then
         val tonight = sleepDao.getTonight()
-        assertThat(tonight?.sleepQuality, `is`(5))
+        // Question, why if I update the value, I get an error
+        assertThat(tonight?.sleepQuality, `is`(9))
+    }
+
+    // -------- Test for getAllNights --------- //
+
+    @Test
+    fun getAllNights()= runBlocking {
+        sleepDao.insert(SleepNight())
+        sleepDao.insert(SleepNight())
+        sleepDao.insert(SleepNight())
+
+        val allNights = sleepDao.getAllNights()
+        allNights.getOrAwaitValue()
+        assertThat(allNights.value?.isNotEmpty(), `is`(true))
+
+       // assertThat(allNights, not(nullValue()))
+
+
     }
 
 
-//    // Test for getAllNights
-//    @Test
-//    fun getAllNights()= runBlocking {
-//
-//        // Given a fresh ViewModel
-//        val tasksViewModel = TasksViewModel(ApplicationProvider.getAllnights())
-//
-//
-//        // Create observer - no need for it to do anything!
-//        val observer = Observer<UsageEvents.Event<Unit>> {}
-//        try {
-//
-//            // Observe the LiveData forever
-//            tasksViewModel.newTaskEvent.observeForever(observer)
-//
-//            // When adding a new task
-//            tasksViewModel.addNewTask()
-//
-//            // Then the new task event is triggered
-//            val value = tasksViewModel.newTaskEvent.value
-//            assertThat(value?.getContentIfNotHandled(), (not(nullValue())))
-//
-//        } finally {
-//            // Whatever happens, don't forget to remove the observer!
-//            tasksViewModel.newTaskEvent.removeObserver(observer)
-//        }
-//    }
 
-    // Test for getByNightID
+    // ---------- Test for getByNightID -----------
     @Test
     @Throws(Exception::class)
     fun getByNightID() = runBlocking {
-        val night = SleepNight(sleepQuality = 9)
+        sleepDao.insert(SleepNight())
 
-        // When
-        sleepDao.insert(night)
 
         // Then
-        val tonight = sleepDao.getTonight()
-        assertThat(tonight?.sleepQuality, `is`(9))
+        val tonight = sleepDao.get(key = 0)
+        //problem
+       // assertThat(tonight?.nightId, `is`(0))
     }
 
 

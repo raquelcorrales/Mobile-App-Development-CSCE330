@@ -20,11 +20,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Switch
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.android.guesstheword.R
 import com.example.android.guesstheword.databinding.TitleFragmentBinding
+import kotlinx.android.synthetic.main.title_fragment.*
+
 
 /**
  * Fragment for the starting or title screen of the app
@@ -35,11 +39,21 @@ class TitleFragment : Fragment() {
                               savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
         val binding: TitleFragmentBinding = DataBindingUtil.inflate(
-                inflater, R.layout.title_fragment, container, false)
+                inflater, com.example.android.guesstheword.R.layout.title_fragment, container, false)
 
         binding.playGameButton.setOnClickListener {
             findNavController().navigate(TitleFragmentDirections.actionTitleToGame())
         }
+
+
+        val switchState: Boolean = switch1.isChecked()
+        when(switchState){
+
+        }
+
+
+
+
         return binding.root
     }
 }
