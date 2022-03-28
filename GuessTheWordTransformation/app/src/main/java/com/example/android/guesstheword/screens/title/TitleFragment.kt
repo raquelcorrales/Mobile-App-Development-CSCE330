@@ -40,25 +40,27 @@ class TitleFragment : Fragment() {
         // Inflate the layout for this fragment
         val binding: TitleFragmentBinding = DataBindingUtil.inflate(
                 inflater, com.example.android.guesstheword.R.layout.title_fragment, container, false)
+        
+        binding.switch1.isChecked() = true
+        binding.switch1.isEnable() = true
+        
 
         binding.playGameButton.setOnClickListener {
-            findNavController().navigate(TitleFragmentDirections.actionTitleToGame())
+            
+            action = TitleFragmentDirections.actionTitleToGame()
+            if(binding.switch1.isChecked()){
+                action.timerSeconds = binding.slider.value.toInt()
+                 
         }
-
-//        // for the Switch
-//        binding.switch1.setOnClickListener  {
-//
-//            findNavController().navigate(TitleFragmentDirections.actionTitleToGame())
-//        }
-//
-//        // for the slider
-//        binding.slider.setOnClickListener {
-//            findNavController().navigate(TitleFragmentDirections.actionTitleToGame())
-//        }
-
-
-
-
+            else{
+                action.timerSeconds = -1
+            }
+            findNavController().navigate(action)
+        }
+        // With this enable or disable timer slider given the value of the timer 
+        binding.switch1.setOnCheckedListener{button, isCheked -> 
+            binding.timerSlider.isEnabled = isChecked
+        }
 
 
         return binding.root
