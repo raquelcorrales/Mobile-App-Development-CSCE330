@@ -20,8 +20,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Switch
-import android.widget.Toast
+import android.widget.*
+import androidx.annotation.NonNull
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -45,15 +45,24 @@ class TitleFragment : Fragment() {
             findNavController().navigate(TitleFragmentDirections.actionTitleToGame())
         }
 
+//        // for the Switch
+//        binding.switch1.setOnClickListener  {
+//
+//            findNavController().navigate(TitleFragmentDirections.actionTitleToGame())
+//        }
+//
+//        // for the slider
+//        binding.slider.setOnClickListener {
+//            findNavController().navigate(TitleFragmentDirections.actionTitleToGame())
+//        }
 
-        val switchState: Boolean = switch1.isChecked()
-        when(switchState){
 
-        }
 
 
 
 
         return binding.root
+
+
     }
 }
