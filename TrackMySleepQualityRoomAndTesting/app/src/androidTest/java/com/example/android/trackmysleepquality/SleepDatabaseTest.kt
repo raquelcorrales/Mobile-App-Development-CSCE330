@@ -180,7 +180,7 @@ class SleepDatabaseTest {
         // Then
         val tonight = sleepDao.get(key = 0)
         //problem
-       // assertThat(tonight?.nightId, `is`(0))
+        assertThat(tonight?.nightId, `is`(0))
     }
 
 

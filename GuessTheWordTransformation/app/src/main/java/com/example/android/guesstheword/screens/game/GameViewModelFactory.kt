@@ -4,11 +4,11 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.android.guesstheword.screens.score.ScoreViewModel
 
-class GameViewModelFactory  (private val timeSecond: Int) : ViewModelProvider.Factory {
+class GameViewModelFactory  (private val timerSecond: Int) : ViewModelProvider.Factory {
 
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
             if (modelClass.isAssignableFrom(GameViewModel::class.java)) {
-                return GameViewModel(timeSecond) as T
+                return GameViewModel(timerSecond) as T
             }
             throw IllegalArgumentException("Unknown ViewModel class")
         }

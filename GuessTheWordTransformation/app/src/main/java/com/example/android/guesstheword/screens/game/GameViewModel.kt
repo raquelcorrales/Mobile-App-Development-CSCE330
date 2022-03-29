@@ -27,11 +27,10 @@ import androidx.lifecycle.ViewModel
 /**
  * ViewModel containing all the logic needed to run the game
  */
-class GameViewModel(timeSecond: Int) : ViewModel() {
+class GameViewModel(timerSecond: Int) : ViewModel() {
 
-    private val timer: CountDownTimer
-    // I think that I need to define it
-    //private val time: timeSecond
+    private var timer: CountDownTimer
+
 
 
     companion object {
@@ -46,12 +45,12 @@ class GameViewModel(timeSecond: Int) : ViewModel() {
         private const val COUNTDOWN_TIME = 60000L
 
     }
+
     //--------------------------------------------
-    // The current value of the time in the slider
+    // The current value of the time in the slider in ms
     //--------------------------------------------
-    private val _time = MutableLiveData<Int>()
-    val time: LiveData<Int>
-        get() = _time
+    private val _time = timerSecond.toLong()*1000
+
 
     // The current _word
     private val _word = MutableLiveData<String>()
@@ -89,41 +88,42 @@ class GameViewModel(timeSecond: Int) : ViewModel() {
      */
     private fun resetList() {
         wordList = mutableListOf(
-                "queen",
-                "hospital",
-                "basketball",
-                "cat",
-                "change",
-                "snail",
-                "soup",
-                "calendar",
-                "sad",
-                "desk",
-                "guitar",
-                "home",
-                "railway",
-                "zebra",
-                "jelly",
-                "car",
-                "crow",
-                "trade",
-                "bag",
-                "roll",
-                "bubble"
+            "queen",
+            "hospital",
+            "basketball",
+            "cat",
+            "change",
+            "snail",
+            "soup",
+            "calendar",
+            "sad",
+            "desk",
+            "guitar",
+            "home",
+            "railway",
+            "zebra",
+            "jelly",
+            "car",
+            "crow",
+            "trade",
+            "bag",
+            "roll",
+            "bubble"
         )
         wordList.shuffle()
     }
 
     init {
-        _time.value = timeSecond
+
         _word.value = ""
         _score.value = 0
         Log.i("GameViewModel", "GameViewModel created!")
         resetList()
         nextWord()
 
-        // Creates a timer which triggers the end of the game when it finishes
-        timer = object : CountDownTimer(COUNTDOWN_TIME, ONE_SECOND) {
+
+            // Creates a timer which triggers the end of the game when it finishes
+        timer = object : CountDownTimer(_time, ONE_SECOND) {
 
             override fun onTick(millisUntilFinished: Long) {
                 _currentTime.value = millisUntilFinished/ONE_SECOND
@@ -136,9 +136,14 @@ class GameViewModel(timeSecond: Int) : ViewModel() {
                 onGameFinish()
             }
         }
+            if(_time > 0){
+            timer.start()
 
-        timer.start()
+        }
+
     }
+
+
 
     /**
      * Callback called when the ViewModel is destroyed

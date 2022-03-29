@@ -29,6 +29,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment.findNavController
 import com.example.android.guesstheword.R
 import com.example.android.guesstheword.databinding.GameFragmentBinding
+import com.example.android.guesstheword.screens.score.ScoreFragmentArgs
+import com.example.android.guesstheword.screens.score.ScoreViewModel
+import com.example.android.guesstheword.screens.score.ScoreViewModelFactory
 
 /**
  * Fragment where the game is played
@@ -37,6 +40,8 @@ class GameFragment() : Fragment() {
 
     private lateinit var binding: GameFragmentBinding
     private lateinit var viewModel: GameViewModel
+    private lateinit var viewModelFactory: GameViewModelFactory
+    //private val _times = timerSecond
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -53,7 +58,10 @@ class GameFragment() : Fragment() {
         )
         Log.i("GameFragment", "Called ViewModelProvider.get")
 
-        viewModel = ViewModelProvider(this).get(GameViewModel::class.java)
+        viewModelFactory = GameViewModelFactory(GameFragmentArgs.fromBundle(arguments!!).timerSecond)
+
+        viewModel = ViewModelProvider(this, viewModelFactory)
+            .get(GameViewModel::class.java)
 
         // Set the viewModel for databinding - this allows the bound layout access
         // to all the data in the VieWModel
@@ -64,10 +72,16 @@ class GameFragment() : Fragment() {
         binding.lifecycleOwner = viewLifecycleOwner
 
 
-        // Observer for the Game finished event
         viewModel.eventGameFinish.observe(this, Observer<Boolean> { hasFinished ->
             if (hasFinished) gameFinished()
         })
+
+
+//    if(_times > 0) {
+//        binding.endGameButton.isEnabled = false
+//    }
+
+
 
         return binding.root
     }
