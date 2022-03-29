@@ -23,6 +23,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
+import com.example.android.guesstheword.databinding.GameFragmentBinding
 
 /**
  * ViewModel containing all the logic needed to run the game
@@ -30,7 +31,7 @@ import androidx.lifecycle.ViewModel
 class GameViewModel(timerSecond: Int) : ViewModel() {
 
     private var timer: CountDownTimer
-
+    
 
 
     companion object {
@@ -49,7 +50,7 @@ class GameViewModel(timerSecond: Int) : ViewModel() {
     //--------------------------------------------
     // The current value of the time in the slider in ms
     //--------------------------------------------
-    private val _time = timerSecond.toLong()*1000
+    public val _time = timerSecond.toLong()*1000
 
 
     // The current _word
@@ -138,6 +139,7 @@ class GameViewModel(timerSecond: Int) : ViewModel() {
         }
             if(_time > 0){
             timer.start()
+                
 
         }
 

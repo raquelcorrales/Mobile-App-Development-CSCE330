@@ -25,6 +25,7 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment.findNavController
 import com.example.android.guesstheword.R
@@ -76,12 +77,9 @@ class GameFragment() : Fragment() {
             if (hasFinished) gameFinished()
         })
 
-
-//    if(_times > 0) {
-//        binding.endGameButton.isEnabled = false
-//    }
-
-
+    if(viewModel._time > 0) {
+        binding.endGameButton.isEnabled = false
+    }
 
         return binding.root
     }
