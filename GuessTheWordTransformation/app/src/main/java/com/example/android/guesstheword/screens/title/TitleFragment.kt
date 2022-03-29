@@ -41,30 +41,27 @@ class TitleFragment : Fragment() {
         val binding: TitleFragmentBinding = DataBindingUtil.inflate(
                 inflater, com.example.android.guesstheword.R.layout.title_fragment, container, false)
         
-        binding.switch1.isChecked() = true
-        binding.switch1.isEnable() = true
+        binding.switch1.isChecked = true
+        binding.switch1.isEnabled = true
         
 
         binding.playGameButton.setOnClickListener {
             
-            action = TitleFragmentDirections.actionTitleToGame()
+            val action = TitleFragmentDirections.actionTitleToGame()
             if(binding.switch1.isChecked()){
-                action.timerSeconds = binding.slider.value.toInt()
+                action.timerSecond = binding.slider.value.toInt()
                  
         }
             else{
-                action.timerSeconds = -1
+                action.timerSecond = -1
             }
             findNavController().navigate(action)
         }
         // With this enable or disable timer slider given the value of the timer 
-        binding.switch1.setOnCheckedListener{button, isCheked -> 
-            binding.timerSlider.isEnabled = isChecked
+        binding.switch1.setOnCheckedChangeListener{button, isChecked ->
+            binding.slider.isEnabled = isChecked
         }
 
-
         return binding.root
-
-
     }
 }

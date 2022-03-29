@@ -27,8 +27,12 @@ import androidx.lifecycle.ViewModel
 /**
  * ViewModel containing all the logic needed to run the game
  */
-class GameViewModel : ViewModel() {
+class GameViewModel(timeSecond: Int) : ViewModel() {
+
     private val timer: CountDownTimer
+    // I think that I need to define it
+    //private val time: timeSecond
+
 
     companion object {
 
@@ -42,6 +46,12 @@ class GameViewModel : ViewModel() {
         private const val COUNTDOWN_TIME = 60000L
 
     }
+    //--------------------------------------------
+    // The current value of the time in the slider
+    //--------------------------------------------
+    private val _time = MutableLiveData<Int>()
+    val time: LiveData<Int>
+        get() = _time
 
     // The current _word
     private val _word = MutableLiveData<String>()
@@ -105,6 +115,7 @@ class GameViewModel : ViewModel() {
     }
 
     init {
+        _time.value = timeSecond
         _word.value = ""
         _score.value = 0
         Log.i("GameViewModel", "GameViewModel created!")
@@ -116,9 +127,11 @@ class GameViewModel : ViewModel() {
 
             override fun onTick(millisUntilFinished: Long) {
                 _currentTime.value = millisUntilFinished/ONE_SECOND
+                //_currentTime.value =
             }
 
             override fun onFinish() {
+
                 _currentTime.value = DONE
                 onGameFinish()
             }
