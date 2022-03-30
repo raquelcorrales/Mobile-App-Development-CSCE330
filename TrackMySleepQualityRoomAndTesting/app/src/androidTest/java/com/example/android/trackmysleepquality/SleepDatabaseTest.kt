@@ -141,13 +141,16 @@ class SleepDatabaseTest {
     fun updateNight() = runBlocking {
         // Given
 
-        sleepDao.insert(SleepNight(sleepQuality = 9))
-        sleepDao.update(SleepNight(sleepQuality = 9))
+        sleepDao.insert(SleepNight())
+        val tonight = sleepDao.getTonight()
 
         // Then
-        val tonight = sleepDao.getTonight()
+        tonight?.sleepQuality = 9
+        sleepDao.update(tonight!!)
+
+        val updatedNight = sleepDao.getTonight()
         // Question, why if I update the value, I get an error
-        assertThat(tonight?.sleepQuality, `is`(9))
+        assertThat(updatedNight?.sleepQuality, `is`(9))
     }
 
     // -------- Test for getAllNights --------- //
@@ -161,6 +164,7 @@ class SleepDatabaseTest {
         val allNights = sleepDao.getAllNights()
         allNights.getOrAwaitValue()
         assertThat(allNights.value?.isNotEmpty(), `is`(true))
+        assertThat(allNights.value?.size, `is`(3))
 
        //assertThat(allNights, not(nullValue()))
 
@@ -178,16 +182,10 @@ class SleepDatabaseTest {
 
 
         // Then
-        val tonight = sleepDao.get(key = 0)
+        val tonight = sleepDao.get(key = 1)
         //problem
-        assertThat(tonight?.nightId, `is`(0))
+        assertThat(tonight?.nightId, `is`(1L))
     }
-
-
-
-
-
-
 }
 
 
