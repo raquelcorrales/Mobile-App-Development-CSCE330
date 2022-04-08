@@ -5,7 +5,7 @@ import com.example.affirmations.adapter.ItemAdapter
 import com.example.affirmations.model.Affirmation
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import mockito.Mockito.mock
+import org.mockito.Mockito.mock
 
 public class AffirmationsAdapterTests {
 

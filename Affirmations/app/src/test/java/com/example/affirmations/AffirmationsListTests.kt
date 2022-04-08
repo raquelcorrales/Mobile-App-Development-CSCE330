@@ -14,25 +14,19 @@ import java.util.regex.Pattern.matches
 
 
 @RunWith(AndroidJUnit4::class)
-public class AffirmationsListTests {
-
-
+class AffirmationsListTests {
     @get:Rule
     val activity = ActivityScenarioRule(MainActivity::class.java)
 
-
     @Test
-    fun scroll_to_item() {
+    fun scroll_to_item(){
         onView(withId(R.id.recycler_view)).perform(
             RecyclerViewActions
-                .scrollTo<RecyclerView.ViewHolder>(
-                    withText(R.string.affirmation10)
-                )
-        )
+                .scrollToPosition<RecyclerView.ViewHolder>(9))
 
+        // I still have an error with the "matches" and "isDisplayed()"
         onView(withText(R.string.affirmation10))
             .check(matches(isDisplayed())
             )
-
     }
 }
