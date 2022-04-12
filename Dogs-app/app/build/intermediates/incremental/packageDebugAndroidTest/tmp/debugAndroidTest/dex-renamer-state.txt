@@ -1,0 +1,7 @@
+#Mon Apr 11 21:52:01 CDT 2022
+base.0=/home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/classes.dex
