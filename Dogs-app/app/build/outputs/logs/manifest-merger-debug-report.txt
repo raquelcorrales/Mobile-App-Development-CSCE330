@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:17:1-51:12
-INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:17:1-51:12
-INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:17:1-51:12
-INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:17:1-51:12
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:17:1-51:12
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:17:1-51:12
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:17:1-51:12
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:17:1-51:12
 MERGED from [androidx.databinding:viewbinding:4.1.1] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/01190dd878731fb9a2e94978a51730fb/jetified-viewbinding-4.1.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment-testing:1.3.3] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/dc0e3c6b17f8575e4aa57edca9e365d5/jetified-fragment-testing-1.3.3/AndroidManifest.xml:17:1-40:12
 MERGED from [androidx.fragment:fragment-ktx:1.3.3] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/969cf4a99a18f6e638a23f4cbad3e283/jetified-fragment-ktx-1.3.3/AndroidManifest.xml:17:1-24:12
@@ -56,25 +56,25 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/rscorralesmarin/
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/d966d594efa8049d371328e6d58e180a/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/3d9043097d3648e3050d1216ee2991e5/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/6aac124ec82aec9ea3808b769b722212/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:17:1-51:12
-INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:17:1-51:12
-INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:17:1-51:12
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:17:1-51:12
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:17:1-51:12
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:17:1-51:12
 	package
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:18:5-35
-		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
-		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:18:5-35
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:17:1-51:12
-		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:17:1-51:12
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:17:1-51:12
-		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:17:1-51:12
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:17:11-69
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:17:11-69
 application
-ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:20:5-49:19
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:20:5-49:19
 MERGED from [androidx.fragment:fragment-testing:1.3.3] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/dc0e3c6b17f8575e4aa57edca9e365d5/jetified-fragment-testing-1.3.3/AndroidManifest.xml:27:5-38:19
 MERGED from [androidx.fragment:fragment-testing:1.3.3] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/dc0e3c6b17f8575e4aa57edca9e365d5/jetified-fragment-testing-1.3.3/AndroidManifest.xml:27:5-38:19
 MERGED from [com.google.android.material:material:1.3.0] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/883a300103dbc81dd4886fe59ceb257f/material-1.3.0/AndroidManifest.xml:22:5-20
@@ -90,53 +90,53 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/rscor
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/ee64c205f53f42c956b9de532d024878/core-1.3.2/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:25:9-35
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:25:9-35
 	android:label
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:23:9-41
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:23:9-41
 	android:roundIcon
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:24:9-54
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:24:9-54
 	android:icon
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:22:9-43
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:22:9-43
 	android:allowBackup
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:21:9-35
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:21:9-35
 	android:theme
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:26:9-46
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:26:9-46
 activity#com.example.dogglers.VerticalListActivity
-ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:27:9-31:20
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:27:9-31:20
 	android:name
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:27:19-55
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:27:19-55
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:28:13-30:49
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:28:13-30:49
 	android:value
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:30:17-46
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:30:17-46
 	android:name
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:29:17-63
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:29:17-63
 activity#com.example.dogglers.HorizontalListActivity
-ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:32:9-36:20
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:32:9-36:20
 	android:name
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:32:19-57
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:32:19-57
 activity#com.example.dogglers.GridListActivity
-ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:37:9-41:20
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:37:9-41:20
 	android:name
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:37:19-51
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:37:19-51
 activity#com.example.dogglers.MainActivity
-ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:42:9-48:20
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:42:9-48:20
 	android:name
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:42:19-47
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:42:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:43:13-47:29
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:43:13-47:29
 action#android.intent.action.MAIN
-ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:44:17-69
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:44:17-69
 	android:name
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:44:25-66
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:44:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:46:17-77
+ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml:46:27-74
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml:46:27-74
 uses-sdk
-INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
-INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:4.1.1] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/01190dd878731fb9a2e94978a51730fb/jetified-viewbinding-4.1.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:viewbinding:4.1.1] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/01190dd878731fb9a2e94978a51730fb/jetified-viewbinding-4.1.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment-testing:1.3.3] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/dc0e3c6b17f8575e4aa57edca9e365d5/jetified-fragment-testing-1.3.3/AndroidManifest.xml:20:5-23:54
@@ -241,18 +241,18 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/rscorralesmarin/.gradl
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/3d9043097d3648e3050d1216ee2991e5/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/6aac124ec82aec9ea3808b769b722212/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/6aac124ec82aec9ea3808b769b722212/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
-INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
+INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [androidx.fragment:fragment-testing:1.3.3] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/dc0e3c6b17f8575e4aa57edca9e365d5/jetified-fragment-testing-1.3.3/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
-		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
-		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
-		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
+		ADDED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.REORDER_TASKS
 ADDED from [androidx.fragment:fragment-testing:1.3.3] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/dc0e3c6b17f8575e4aa57edca9e365d5/jetified-fragment-testing-1.3.3/AndroidManifest.xml:25:5-72
 MERGED from [androidx.test:core:1.3.0] /home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/73d0678ae04aa1970553ff6f2875e22a/jetified-core-1.3.0/AndroidManifest.xml:24:5-72

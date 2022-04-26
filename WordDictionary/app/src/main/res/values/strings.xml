@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dictionary App</string>
+    <string name="edit_text_string">search your word</string>
+    <string name="buttontext">find</string>
+    <string name="toolsdefinition">My Definition</string>
+    <string name="back">back to search word</string>
+    <string name="wordnotfound">word not found!</string>
+    <string name="title_activity_second">Second_activity</string>
+
+</resources>

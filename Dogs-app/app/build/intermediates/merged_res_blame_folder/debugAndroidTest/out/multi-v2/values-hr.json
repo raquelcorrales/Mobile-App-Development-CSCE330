@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hr/values-hr.xml",
+            "outputFile": "/home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hr/values-hr.xml",
             "map": [
                 {
                     "source": "/home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/883a300103dbc81dd4886fe59ceb257f/material-1.3.0/res/values-hr/values-hr.xml",

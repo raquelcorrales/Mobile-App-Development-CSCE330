@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/rscorralesmarin/Desktop/RaquelC330/android-basics-kotlin-dogglers-app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/home/rscorralesmarin/Desktop/RaquelC330/Dogs-app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/home/rscorralesmarin/.gradle/caches/transforms-2/files-2.1/a049b18ea332f684ca2912be903ac8b8/media-1.0.0/res/values-v24/values-v24.xml",
