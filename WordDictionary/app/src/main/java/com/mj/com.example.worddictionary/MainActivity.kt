@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.mj.com.example.worddictionary.database.Word
 
 import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONArray
@@ -33,7 +34,8 @@ class MainActivity : AppCompatActivity() {
             val stringRequest = StringRequest ( Request.Method.GET, url,
                     { response ->
                         try {
-                            extractDefinitionFromJson(response)
+                            val word = extractDefinitionFromJson(response)
+                            start_second_activity(word)
                         } catch (exception : Exception){
                         exception.printStackTrace()}
                     },
@@ -85,7 +87,7 @@ class MainActivity : AppCompatActivity() {
 
 
     // Function to obtain the definition and call the second activity with the intent
-    private fun extractDefinitionFromJson(response : String){
+    private fun extractDefinitionFromJson(response : String) : Word{
         val jsonArray = JSONArray(response)
         val firstIndex = jsonArray.getJSONObject(0)
         val getShortDefinition = firstIndex.getJSONArray("shortdef")
@@ -93,14 +95,20 @@ class MainActivity : AppCompatActivity() {
         val firstShortDefinition = getShortDefinition.get(0)
         val secondShortDefinition = getShortDefinition.get(1)
         val thirdShortDefinition = getShortDefinition.get(2)
-        // Declaration of the intent
+//        val imageName = jsonObject
+        val word = Word("word id goes here")
+
+        return word
+    }
+
+    private fun start_second_activity(word: Word) {
         val intent = Intent(this, SecondActivity::class.java)
         val bundle = Bundle()
-        bundle.putString("EXTRA_1",firstShortDefinition.toString())
-        bundle.putString("EXTRA_2",secondShortDefinition.toString())
-        bundle.putString("EXTRA_3",thirdShortDefinition.toString())
+        bundle.putParcelable("WORD_EXTRA", word)
+        //        bundle.putString("EXTRA_1",firstShortDefinition.toString())
+        //        bundle.putString("EXTRA_2",secondShortDefinition.toString())
+        //        bundle.putString("EXTRA_3",thirdShortDefinition.toString())
         intent.putExtras(bundle)
         startActivity(intent)
-
     }
 }
