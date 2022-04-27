@@ -10,15 +10,50 @@
         android:layout_height="wrap_content"
         android:background="@drawable/back_arrow"
         android:contentDescription="@string/back"/>
+
     <TextView
-        android:id="@+id/definition_text_view"
+        android:id="@+id/definition1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textColor="@android:color/black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="22dp"
         android:gravity="center"
-        android:layout_margin="@dimen/margin_eight"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
         android:textSize="@dimen/text_size_sixteen"
         tools:text="@string/tools_definition" />
+
+    <TextView
+        android:id="@+id/definition2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="452dp"
+        android:gravity="center"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_sixteen"
+        tools:text="@string/tools_definition" />
+
+    <TextView
+        android:id="@+id/definition3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="142dp"
+        android:gravity="center"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_sixteen"
+        tools:text="@string/tools_definition" />
+
 
 </RelativeLayout>

@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_broken_image.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_connection_error.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_for_sale_outline.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/loading_img.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.20260416666666667" />
+        <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.20260416666666667" />
+        <entry key="app/src/main/res/layout/fragment_overview.xml" value="0.20260416666666667" />
+        <entry key="app/src/main/res/layout/grid_view_item.xml" value="0.20260416666666667" />
+        <entry key="app/src/main/res/menu/overflow_menu.xml" value="0.20260416666666667" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

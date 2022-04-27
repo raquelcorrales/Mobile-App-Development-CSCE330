@@ -2,18 +2,27 @@ package com.example.worddictionary
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.example.worddictionary.SecondActivity
+
 import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONArray
 
+
+
+
+
+
+
+
+
 class MainActivity : AppCompatActivity() {
 
-    private val KEY = "WORD_DEFINITION"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -37,6 +46,11 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menus, menu)
+        return true
+    }
+
     // Function to search the word that is received in the text-box
 
     private fun getUrl() : String {
@@ -50,6 +64,26 @@ class MainActivity : AppCompatActivity() {
         return url
     }
 
+//    // Function to obtain the definition and call the second activity with the intent
+//    private fun extractDefinitionFromJson(response : String){
+//        val jsonArray = JSONArray(response)
+//        val firstIndex = jsonArray.getJSONObject(0)
+//        val getShortDefinition = firstIndex.getJSONArray("shortdef")
+//        // I am trying to obtain all the definitions
+//        val firstShortDefinition = getShortDefinition.get(0)
+//        val secondShortDefinition = getShortDefinition.get(1)
+//        val thirdShortDefinition = getShortDefinition.get(2)
+//        // Declaration of the intent
+//        val intent = Intent(this, SecondActivity::class.java)
+//        intent.putExtra(KEY, firstShortDefinition.toString())
+//        // second activity is initialized
+//        startActivity(intent)
+//
+//    }
+//}
+
+
+
     // Function to obtain the definition and call the second activity with the intent
     private fun extractDefinitionFromJson(response : String){
         val jsonArray = JSONArray(response)
@@ -58,10 +92,14 @@ class MainActivity : AppCompatActivity() {
         // I am trying to obtain all the definitions
         val firstShortDefinition = getShortDefinition.get(0)
         val secondShortDefinition = getShortDefinition.get(1)
+        val thirdShortDefinition = getShortDefinition.get(2)
         // Declaration of the intent
         val intent = Intent(this, SecondActivity::class.java)
-        intent.putExtra(KEY, firstShortDefinition.toString())
-        // second activity is initialized
+        val bundle = Bundle()
+        bundle.putString("EXTRA_1",firstShortDefinition.toString())
+        bundle.putString("EXTRA_2",secondShortDefinition.toString())
+        bundle.putString("EXTRA_3",thirdShortDefinition.toString())
+        intent.putExtras(bundle)
         startActivity(intent)
 
     }
