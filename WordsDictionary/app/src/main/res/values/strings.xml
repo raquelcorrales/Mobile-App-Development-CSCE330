@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WordsDictionary</string>
+    <string name="show_all">Show All</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+    <string name="add_word">Add Word</string>
+    <string name="red_string">hola</string>
+    <string name="green_string">hola2</string>
+</resources>

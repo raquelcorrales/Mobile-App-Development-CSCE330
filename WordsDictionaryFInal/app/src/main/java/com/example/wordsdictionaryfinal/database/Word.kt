@@ -14,24 +14,32 @@
  * limitations under the License.
  */
 
-package com.example.android.trackmysleepquality.database
+package com.example.wordsdictionaryfinal.database
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 
-@Entity(tableName = "daily_sleep_quality_table")
-data class SleepNight(
-        @PrimaryKey(autoGenerate = true)
-        var nightId: Long = 0L,
+@Entity(tableName = "dictionary_word")
+data class Word(
+    @PrimaryKey(autoGenerate = true)
+    var Id: String,
 
-        @ColumnInfo(name = "start_time_milli")
-        val startTimeMilli: Long = System.currentTimeMillis(),
+    @ColumnInfo(name = "shortdef1")
+    val shortdef1: String,
 
-        @ColumnInfo(name = "end_time_milli")
-        var endTimeMilli: Long = startTimeMilli,
+    @ColumnInfo(name = "shortdef2")
+    val shortdef2: String,
 
-        @ColumnInfo(name = "quality_rating")
-        var sleepQuality: Int = -1
+    @ColumnInfo(name = "shortdef3")
+    val shortdef3: String,
+
+    @ColumnInfo(name = "imageName")
+    val imageName: String,
+
+    @ColumnInfo(name = "active")
+    var active: Boolean = true
+
+
 )
