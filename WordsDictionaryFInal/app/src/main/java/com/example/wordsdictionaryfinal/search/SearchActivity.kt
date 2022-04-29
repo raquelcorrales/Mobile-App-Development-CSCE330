@@ -3,6 +3,7 @@ package com.example.wordsdictionaryfinal.search
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import com.example.wordsdictionaryfinal.R
@@ -15,13 +16,12 @@ class SearchActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
         val button = findViewById<Button>(R.id.find_button)
-        button.setOnClickListener {
+        button.setOnClickListener({
             searchWord()
-        }
-        return
+        })
     }
 
-    private fun searchWord() {
+    fun searchWord() {
 
         var searchWord = findViewById<EditText>(R.id.word_edit_text).text.toString()
         Log.d("searchWord", "Search for word ${searchWord}")
