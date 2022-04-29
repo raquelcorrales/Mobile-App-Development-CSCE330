@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/back_arrow.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/search_icon.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/text_background.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.20260416666666667" />
         <entry key="app/src/main/res/layout/activity_main3.xml" value="0.20260416666666667" />
         <entry key="app/src/main/res/menu/menu_leftbar.xml" value="0.36302083333333335" />

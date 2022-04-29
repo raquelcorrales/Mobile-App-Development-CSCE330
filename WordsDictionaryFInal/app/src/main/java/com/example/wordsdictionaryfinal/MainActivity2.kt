@@ -42,7 +42,7 @@ class MainActivity2 : AppCompatActivity() {
             Log.d("searchWord", response.body()!!.substring(0, 30))
             val jsonString = response.body()!!
             if (jsonString.startsWith("[{")) {
-                Log.d("searchWord", "parseJsonToWOrd")
+                Log.d("searchWord", "parseJsonToWord")
                 word = parseJsonToWord(searchword, jsonString)
             } else {
                 Log.d("searchWord", "parseToStringList")
@@ -51,6 +51,7 @@ class MainActivity2 : AppCompatActivity() {
         }
         if (word != null){
             setContentView(R.layout.activity_main3)
+            // SEND THE INFORMATION
         }
     }*/
 
