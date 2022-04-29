@@ -7,7 +7,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.wordsdictionaryfinal.MainActivity3" />
+            type="com.example.wordsdictionaryfinal.add.AddViewModel" />
     </data>
 
     <ScrollView
@@ -25,7 +25,7 @@
                 android:layout_width="0dp"
                 android:layout_height="266dp"
                 android:scaleType="centerCrop"
-                app:imageUrl="@{viewModel.selectedProperty.imgSrcUrl}"
+                app:imageUrl="@{viewModel.word.imageName}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -38,7 +38,7 @@
                 android:layout_marginTop="16dp"
                 android:textColor="#de000000"
                 android:textSize="39sp"
-                android:text="@{viewModel.displayPropertyType}"
+                android:text="@{viewModel.word.Id}"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/main_photo_image"
                 tools:text="WORD" />
@@ -50,7 +50,7 @@
                 android:layout_marginTop="8dp"
                 android:textColor="#de000000"
                 android:textSize="20sp"
-                android:text="@{viewModel.displayPropertyPrice}"
+                android:text="@{viewModel.word.shortdef1}"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/property_type_text"
                 tools:text="$DEFINITIONS" />

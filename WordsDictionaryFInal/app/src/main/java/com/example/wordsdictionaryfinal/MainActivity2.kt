@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
+import android.widget.Button
 import android.widget.Toast
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
@@ -24,35 +25,35 @@ class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-        find_button.setOnClickListener {
-            //SearchWord()
+        val button = findViewById<Button>(R.id.find_button)
+        button.setOnClickListener {
+            searchWord()
         }
         return
     }
 
- /*   private fun SearchWord() {
+    private fun searchWord() {
 
-        var searchInput = word_edit_text.text
-        var searchword = searchInput.editText?.text.toString()
-        Log.d("searchWord", "Search for word ${searchInput.editText?.text.toString()}")
-        var word: Word?
-        lifecycleScope.launch {
-            var response =
-                DictionaryApi.retrofitService.getWord(searchInput.editText?.text.toString())
-            Log.d("searchWord", response.body()!!.substring(0, 30))
-            val jsonString = response.body()!!
-            if (jsonString.startsWith("[{")) {
-                Log.d("searchWord", "parseJsonToWord")
-                word = parseJsonToWord(searchword, jsonString)
-            } else {
-                Log.d("searchWord", "parseToStringList")
-            }
-
-        }
-        if (word != null){
-            setContentView(R.layout.activity_main3)
-            // SEND THE INFORMATION
-        }
-    }*/
+        var searchWord = word_edit_text.text.toString()
+        Log.d("searchWord", "Search for word ${searchWord}")
+//        var word: Word?
+//        lifecycleScope.launch {
+//            var response =
+//                DictionaryApi.retrofitService.getWord(searchInput.editText?.text.toString())
+//            Log.d("searchWord", response.body()!!.substring(0, 30))
+//            val jsonString = response.body()!!
+//            if (jsonString.startsWith("[{")) {
+//                Log.d("searchWord", "parseJsonToWord")
+//                word = parseJsonToWord(searchword, jsonString)
+//            } else {
+//                Log.d("searchWord", "parseToStringList")
+//            }
+//
+//        }
+//        if (word != null){
+//            setContentView(R.layout.activity_main3)
+//            // SEND THE INFORMATION
+//        }
+    }
 
 }
