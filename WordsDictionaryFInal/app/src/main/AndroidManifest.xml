@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WordsDictionaryFInal">
         <activity
-            android:name=".MainActivity3"
+            android:name=".add.AddActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".search.SearchActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
