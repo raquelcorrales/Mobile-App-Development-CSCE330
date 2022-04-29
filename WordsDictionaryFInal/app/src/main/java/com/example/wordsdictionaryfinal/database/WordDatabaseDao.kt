@@ -23,9 +23,6 @@ interface WordDao {
     @Query("SELECT exists(select * from dictionary_word WHERE id = :wordId)")
     suspend fun wordExists(wordId: String): Boolean
 
-    // suspend is not required because Room will use a background thread for queries
-    // that return LiveData
-
     @Query("SELECT * FROM dictionary_word ORDER BY id DESC")
     fun getAllWords(): LiveData<List<Word>>
 

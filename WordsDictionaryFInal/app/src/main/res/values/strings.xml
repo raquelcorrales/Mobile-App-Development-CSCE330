@@ -6,4 +6,6 @@
     <string name="add_word">Add Word</string>
     <string name="search_button">FInd</string>
     <string name="search_text">Search Word</string>
+    <string name="back">Back</string>
+    <string name="tools_definition">definicion 1</string>
 </resources>

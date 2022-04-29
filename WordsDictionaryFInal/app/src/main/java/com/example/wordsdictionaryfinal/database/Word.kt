@@ -16,30 +16,27 @@
 
 package com.example.wordsdictionaryfinal.database
 
+import android.os.Parcelable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import kotlinx.android.parcel.Parcelize
 
 
 @Entity(tableName = "dictionary_word")
+@Parcelize
 data class Word(
-    @PrimaryKey(autoGenerate = true)
-    var Id: String,
+    @PrimaryKey
+    val Id: String,
 
-    @ColumnInfo(name = "shortdef1")
     val shortdef1: String,
 
-    @ColumnInfo(name = "shortdef2")
-    val shortdef2: String,
+    val shortdef2: String = "",
 
-    @ColumnInfo(name = "shortdef3")
-    val shortdef3: String,
+    val shortdef3: String = "",
 
-    @ColumnInfo(name = "imageName")
-    val imageName: String,
+    val imageName: String = "",
 
-    @ColumnInfo(name = "active")
     var active: Boolean = true
 
-
-)
+) : Parcelable
