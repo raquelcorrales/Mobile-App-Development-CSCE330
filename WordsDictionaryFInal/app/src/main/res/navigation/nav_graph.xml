@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dictWordsFragment">
+
+    <fragment
+        android:id="@+id/dictWordsFragment"
+        android:name="com.example.words.screens.overview.DictWordsFragment"
+        android:label="Word Definitions"
+        tools:layout="@layout/fragment_dict_words">
+        <action
+            android:id="@+id/action_dictWordsFragment_to_searchWordFragment"
+            app:destination="@id/searchWordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addWordFragment"
+        android:name="com.example.words.screens.add.AddWordFragment"
+        android:label="Add Word Definition">
+        <argument
+            android:name="wordDef"
+            app:argType="com.example.words.entity.Word" />
+        <action
+            android:id="@+id/action_addWordFragment_to_searchWordFragment"
+            app:destination="@id/searchWordFragment"
+            app:popUpTo="@id/dictWordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchWordFragment"
+        android:name="com.example.words.screens.search.SearchWordFragment"
+        android:label="Search Word Definition">
+        <action
+            android:id="@+id/action_searchWordFragment_to_addWordFragment"
+            app:destination="@id/addWordFragment" />
+    </fragment>
+</navigation>

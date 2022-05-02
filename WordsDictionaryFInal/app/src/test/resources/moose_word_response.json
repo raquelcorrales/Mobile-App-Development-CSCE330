@@ -1,0 +1,237 @@
+[
+  {
+    "meta": {
+      "id": "moose",
+      "uuid": "90093472-916a-4677-8294-4d9cbebfcbd0",
+      "sort": "133972000",
+      "src": "collegiate",
+      "section": "alpha",
+      "stems": [
+        "moose"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "moose",
+      "prs": [
+        {
+          "mw": "\u02c8m\u00fcs",
+          "sound": {
+            "audio": "moose001",
+            "ref": "c",
+            "stat": "1"
+          }
+        }
+      ]
+    },
+    "fl": "noun",
+    "ins": [
+      {
+        "il": "plural",
+        "if": "moose"
+      }
+    ],
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "sn": "1",
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a ruminant mammal ({it}Alces alces{\/it}) with humped shoulders, long legs, and broadly palmated antlers that is the largest existing member of the deer family and inhabits forested areas of Canada, the northern U.S., Europe, and Asia"
+                  ]
+                ]
+              }
+            ]
+          ],
+          [
+            [
+              "sense",
+              {
+                "sn": "2",
+                "lbs": [
+                  "capitalized"
+                ],
+                "et": [
+                  [
+                    "text",
+                    "Loyal Order of {it}Moose{\/it}"
+                  ]
+                ],
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a member of a major benevolent and fraternal order"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "art": {
+      "artid": "moose",
+      "capt": "moose 1"
+    },
+    "et": [
+      [
+        "text",
+        "of Algonquian origin; akin to Massachusett {it}moos{\/it} moose"
+      ]
+    ],
+    "date": "1603{ds||1||}",
+    "shortdef": [
+      "a ruminant mammal (Alces alces) with humped shoulders, long legs, and broadly palmated antlers that is the largest existing member of the deer family and inhabits forested areas of Canada, the northern U.S., Europe, and Asia",
+      "a member of a major benevolent and fraternal order"
+    ]
+  },
+  {
+    "meta": {
+      "id": "Moose:g",
+      "uuid": "05743ec2-d220-4b2f-8fdd-4f5a70c11b34",
+      "sort": "280794000",
+      "src": "collegiate",
+      "section": "geog",
+      "stems": [
+        "Moose"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "Moose",
+      "prs": [
+        {
+          "mw": "\u02c8m\u00fcs",
+          "sound": {
+            "audio": "ggmoos01",
+            "ref": "c",
+            "stat": "1"
+          }
+        }
+      ]
+    },
+    "fl": "geographical name",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "river 50 miles (80 kilometers) long in northeastern Ontario, Canada, flowing northeast into James Bay "
+                  ],
+                  [
+                    "snote",
+                    [
+                      [
+                        "t",
+                        "The Moose River is actually an {d_link|estuary|estuary} of the Abitibi, Mattagami, and other rivers."
+                      ]
+                    ]
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "river 50 miles (80 kilometers) long in northeastern Ontario, Canada, flowing northeast into James Bay"
+    ]
+  },
+  {
+    "meta": {
+      "id": "Moose Jaw:g",
+      "uuid": "d0b718c1-9a38-4525-a9f1-83552437bc6d",
+      "sort": "280796000",
+      "src": "collegiate",
+      "section": "geog",
+      "stems": [
+        "Moose Jaw"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "Moose Jaw"
+    },
+    "fl": "geographical name",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "city in southern Saskatchewan, Canada, west of Regina {it}population{\/it} 33,274"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "shortdef": [
+      "city in southern Saskatchewan, Canada, west of Regina population 33,274"
+    ]
+  },
+  {
+    "meta": {
+      "id": "Bull Moose",
+      "uuid": "e93c4d41-5f56-4430-bef8-954ebf8d4b04",
+      "sort": "020478800",
+      "src": "collegiate",
+      "section": "alpha",
+      "stems": [
+        "Bull Moose",
+        "Bull Mooses"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "Bull Moose"
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a follower of Theodore Roosevelt in the U.S. presidential campaign of 1912"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "et": [
+      [
+        "text",
+        "{it}bull moose{\/it}, emblem of the Progressive party of 1912"
+      ]
+    ],
+    "date": "1912",
+    "shortdef": [
+      "a follower of Theodore Roosevelt in the U.S. presidential campaign of 1912"
+    ]
+  }
+]

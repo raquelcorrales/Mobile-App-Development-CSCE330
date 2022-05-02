@@ -4,12 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/back_arrow.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_broken_image.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_connection_error.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/search_icon.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/text_background.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.20260416666666667" />
         <entry key="app/src/main/res/layout/activity_main3.xml" value="0.20260416666666667" />
         <entry key="app/src/main/res/layout/activity_search.xml" value="0.31302083333333336" />
+        <entry key="app/src/main/res/layout/dict_word_item.xml" value="0.2554347826086957" />
+        <entry key="app/src/main/res/layout/fragment_add_word.xml" value="0.2554347826086957" />
+        <entry key="app/src/main/res/layout/fragment_dict_words.xml" value="0.2554347826086957" />
+        <entry key="app/src/main/res/layout/fragment_search_word.xml" value="0.2554347826086957" />
         <entry key="app/src/main/res/menu/menu_leftbar.xml" value="0.36302083333333335" />
       </map>
     </option>

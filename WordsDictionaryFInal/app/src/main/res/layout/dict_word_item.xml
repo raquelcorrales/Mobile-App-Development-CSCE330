@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="word"
+            type="com.example.words.entity.Word" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/word_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="baseball"></TextView>
+
+        <TextView
+            android:id="@+id/word_def1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="A game played with a bat and ball"></TextView>
+
+        <TextView
+            android:id="@+id/word_def2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="A game played with a bat and ball"></TextView>
+
+        <TextView
+            android:id="@+id/word_def3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="A game played with a bat and ball"></TextView>
+    </LinearLayout>
+</layout>

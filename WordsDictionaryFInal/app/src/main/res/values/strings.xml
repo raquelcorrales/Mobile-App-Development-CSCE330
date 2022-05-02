@@ -1,11 +1,7 @@
 <resources>
-    <string name="app_name">WordsDictionaryFInal</string>
-    <string name="show_all">Show All</string>
-    <string name="active">Active</string>
-    <string name="inactive">Inactive</string>
-    <string name="add_word">Add Word</string>
-    <string name="search_button">FInd</string>
-    <string name="search_text">Search Word</string>
-    <string name="back">Back</string>
-    <string name="tools_definition">definicion 1</string>
+    <string name="app_name">Words</string>
+    <string name="show_all">Show all</string>
+    <string name="show_active">Show active</string>
+    <string name="show_inactive">Show Inactive</string>
+    <string name="add_word">Add word</string>
 </resources>

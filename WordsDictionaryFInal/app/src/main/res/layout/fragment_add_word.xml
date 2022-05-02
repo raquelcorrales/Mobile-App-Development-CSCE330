@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.words.screens.add.AddWordViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/word_image"
+            android:layout_width="0dp"
+            android:layout_height="266dp"
+            android:contentDescription="What it looks like."
+            android:scaleType="fitXY"
+            app:imageName="@{viewModel.word.imageName}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/word_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@{viewModel.word.id}"
+            android:textColor="#de000000"
+            android:textSize="39sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/word_image"
+            tools:text="baseball" />
+
+        <ScrollView
+            android:id="@+id/scroll_word_def"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/search_again"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/word_id"
+            app:layout_constraintVertical_bias="0.10">
+
+            <LinearLayout
+                android:id="@+id/layout_word_defs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scroll_word_def">
+
+
+                <TextView
+                    android:id="@+id/word_def1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@{viewModel.word.shortDef1}"
+                    android:textColor="#de000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_word_defs"
+                    tools:text="A game played with a bat and ball." />
+
+                <TextView
+                    android:id="@+id/word_def2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@{viewModel.word.shortDef2}"
+                    android:textColor="#de000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/word_def1"
+                    tools:text="Players run around four bases as fast as they can without being tagged out." />
+
+                <TextView
+                    android:id="@+id/word_def3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@{viewModel.word.shortDef3}"
+                    android:textColor="#de000000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/word_def2"
+                    tools:text="Pitchers take as much time as possible between pitches to slow the game down." />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/search_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Again"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/add_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Word"
+            app:layout_constraintBaseline_toBaselineOf="@+id/search_again"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/search_again" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

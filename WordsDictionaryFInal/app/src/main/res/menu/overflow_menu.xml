@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/show_all_menu"
+        android:title="@string/show_all" />
+    <item
+        android:id="@+id/show_active_menu"
+        android:title="@string/show_active" />
+    <item
+        android:id="@+id/show_inactive_menu"
+        android:title="@string/show_inactive" />
+
+    <item
+        android:id="@+id/add_word_menu"
+        android:title="@string/add_word" />
+</menu>

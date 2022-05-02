@@ -1,0 +1,246 @@
+[
+  {
+    "meta": {
+      "id": "baseball",
+      "uuid": "adb8b09d-4d7c-487c-bfd1-2d5c5ef2b12e",
+      "sort": "020081500",
+      "src": "collegiate",
+      "section": "alpha",
+      "stems": [
+        "baseball",
+        "baseballs"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "base*ball",
+      "prs": [
+        {
+          "mw": "\u02c8b\u0101s-\u02ccb\u022fl",
+          "sound": {
+            "audio": "baseba01",
+            "ref": "c",
+            "stat": "1"
+          }
+        }
+      ]
+    },
+    "fl": "noun",
+    "lbs": [
+      "often attributive"
+    ],
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a game played with a bat and ball between two teams of nine players each on a large field having four {d_link|bases|base:1} that mark the course a runner must take to score"
+                  ]
+                ],
+                "sdsense": {
+                  "sd": "also",
+                  "dt": [
+                    [
+                      "text",
+                      "{bc}the ball used in this game"
+                    ]
+                  ]
+                }
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "date": "1845",
+    "shortdef": [
+      "a game played with a bat and ball between two teams of nine players each on a large field having four bases that mark the course a runner must take to score; also : the ball used in this game"
+    ]
+  },
+  {
+    "meta": {
+      "id": "baseball cap",
+      "uuid": "410d116b-e573-4c6a-b1cd-51a3dcf1992c",
+      "sort": "020081600",
+      "src": "collegiate",
+      "section": "alpha",
+      "stems": [
+        "baseball cap",
+        "baseball caps"
+      ],
+      "offensive": false
+    },
+    "hwi": {
+      "hw": "baseball cap"
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "{bc}a cap of the kind worn by baseball players that has a rounded crown and a long visor"
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "date": "1865",
+    "shortdef": [
+      "a cap of the kind worn by baseball players that has a rounded crown and a long visor"
+    ]
+  },
+  {
+    "meta": {
+      "id": "inside baseball:1",
+      "uuid": "9435b689-5d7d-4daa-bcfe-54015ecf11ff",
+      "sort": "091838300",
+      "src": "collegiate",
+      "section": "alpha",
+      "stems": [
+        "inside baseball"
+      ],
+      "offensive": false
+    },
+    "hom": 1,
+    "hwi": {
+      "hw": "inside baseball"
+    },
+    "fl": "adjective",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "{bc}known or understood only by a small group of people {bc}{sx|esoteric||} "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "\u0022Nick, even I don\u0027t understand those clues,\u0022 Go said. \u0022They\u0027re all {wi}inside baseball{\/wi} between you and Amy \u2026 \u0022",
+                        "aq": {
+                          "auth": "Gillian Flynn"
+                        }
+                      },
+                      {
+                        "t": "It might be a bit {wi}inside baseball{\/wi} to some, but I love it when crossword constructors poke fun at puzzle-making conventions.",
+                        "aq": {
+                          "auth": "Deb Amien"
+                        }
+                      },
+                      {
+                        "t": "We have, however, tried to shy away from the super-scientific words\u2014they\u0027re just too {wi}inside baseball{\/wi} unless you\u0027re an actual distiller.",
+                        "aq": {
+                          "auth": "Zach Johnston"
+                        }
+                      },
+                      {
+                        "t": "This is very {wi}inside baseball{\/wi}, but the House Rules Committee meets today to consider a series of rule changes for the 2021 and 2022 legislative sessions.",
+                        "aq": {
+                          "auth": "Dan McGowan"
+                        }
+                      },
+                      {
+                        "t": "Earnings reports are always a bit dry and {wi}inside baseball{\/wi} for the casual entertainment industry observer.",
+                        "aq": {
+                          "auth": "Brandon Katz"
+                        }
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "date": "1924",
+    "shortdef": [
+      "known or understood only by a small group of people : esoteric"
+    ]
+  },
+  {
+    "meta": {
+      "id": "inside baseball:2",
+      "uuid": "8a5cb176-6ce1-4e11-beb1-8c1b2c384ec3",
+      "sort": "091838600",
+      "src": "collegiate",
+      "section": "alpha",
+      "stems": [
+        "inside baseball"
+      ],
+      "offensive": false
+    },
+    "hom": 2,
+    "hwi": {
+      "hw": "inside baseball"
+    },
+    "fl": "noun",
+    "def": [
+      {
+        "sseq": [
+          [
+            [
+              "sense",
+              {
+                "dt": [
+                  [
+                    "text",
+                    "{bc}something known or understood only by a small group of people "
+                  ],
+                  [
+                    "vis",
+                    [
+                      {
+                        "t": "If the ethics issues amount to {wi}inside baseball{\/wi} for many voters, Mr. Carter is betting that the issue of underfunded schools will strike a more universal chord.",
+                        "aq": {
+                          "auth": "Richard Fausset"
+                        }
+                      },
+                      {
+                        "t": "It would be easy to regard the fate of legislative history in the Roberts court as so much {wi}inside baseball{\/wi}, of interest only to fanatical Supreme Court groupies.",
+                        "aq": {
+                          "auth": "Linda Greenhouse"
+                        }
+                      },
+                      {
+                        "t": "It\u0027s not that a person outside that audience can\u0027t watch and, in broad strokes, understand the story of {it}Mank{\/it}. It\u0027s that to an extent, the film feels like {wi}inside baseball{\/wi}.",
+                        "aq": {
+                          "auth": "Alissa Wilkinson"
+                        }
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "date": "1968",
+    "shortdef": [
+      "something known or understood only by a small group of people"
+    ]
+  }
+]
