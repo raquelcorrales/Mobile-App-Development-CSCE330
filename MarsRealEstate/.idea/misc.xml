@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/raq-s/Documents/RaquelC330/MarsRealEstate/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/raq-s/Documents/RaquelC330/MarsRealEstate/app/src/main/res/layout/fragment_detail.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/raq-s/Documents/RaquelC330/MarsRealEstate/app/src/main/res/layout/fragment_overview.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/raq-s/Documents/RaquelC330/MarsRealEstate/app/src/main/res/layout/grid_view_item.xml" value="0.17300724637681159" />
         <entry key="app/src/main/res/drawable/ic_broken_image.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_connection_error.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_for_sale_outline.xml" value="0.1" />
@@ -18,5 +22,5 @@
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

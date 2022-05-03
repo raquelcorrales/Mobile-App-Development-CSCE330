@@ -1,6 +1,8 @@
 package com.example.words.screens.overview
 
+import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -30,10 +32,15 @@ class DictWordsFragment : Fragment() {
         viewModel = ViewModelProvider(this, viewModelFactory).get(DictWordsViewModel::class.java)
 
         // Allows Data Binding to Observe LiveData with the lifecycle of this Fragment
-        binding.lifecycleOwner = this
+        binding.lifecycleOwner = this.viewLifecycleOwner
 
         binding.viewModel = viewModel
-        binding.dictWords.adapter = DictWordsListAdapter()
+        val adapter = DictWordsListAdapter()
+        viewModel.dictWords.observe(this.viewLifecycleOwner){list ->
+            Log.d(TAG, "Observed word list change")
+            adapter.submitList(list)
+        }
+        binding.dictWords.adapter = adapter
 
         setHasOptionsMenu(true)
 
@@ -44,6 +51,11 @@ class DictWordsFragment : Fragment() {
         inflater.inflate(R.menu.overflow_menu, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
+
+
+
+
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.add_word_menu) {
