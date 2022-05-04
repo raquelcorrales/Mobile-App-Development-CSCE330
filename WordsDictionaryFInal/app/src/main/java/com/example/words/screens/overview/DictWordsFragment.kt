@@ -10,6 +10,9 @@ import androidx.navigation.fragment.findNavController
 import com.example.words.R
 import com.example.words.database.WordDatabase
 import com.example.words.databinding.FragmentDictWordsBinding
+import com.example.words.database.WordDao
+import com.example.words.entity.Word
+
 
 
 
@@ -24,7 +27,7 @@ class DictWordsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = FragmentDictWordsBinding.inflate(inflater)
 
         val application = requireNotNull(this.activity).application
@@ -57,6 +60,12 @@ class DictWordsFragment : Fragment() {
         return binding.root
     }
 
+
+
+   /* *//** Called when the user touches the button *//*
+    fun sendMessage(view: View, word: Word) {
+        word.active = false
+    }*/
 
 
     /**
