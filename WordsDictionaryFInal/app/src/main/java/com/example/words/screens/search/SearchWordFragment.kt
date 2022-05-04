@@ -20,6 +20,7 @@ import com.example.words.network.DictionaryApi
 import com.example.words.network.parseJsonToWord
 import com.example.words.screens.add.AddWordFragmentArgs
 import com.example.words.screens.overview.DictWordsFragmentDirections
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputLayout
 import kotlinx.coroutines.launch
 
@@ -67,7 +68,7 @@ class SearchWordFragment : Fragment() {
         // returned by the API we can display this on the search word screen.
         viewModel.suggestedWords.observe(this, Observer { suggestedWords ->
             if (null != suggestedWords) {
-                TODO("These words should appear on the search word screen")
+
             }
         })
 

@@ -17,7 +17,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Search for a word definition" />
+            android:hint="Find a word" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

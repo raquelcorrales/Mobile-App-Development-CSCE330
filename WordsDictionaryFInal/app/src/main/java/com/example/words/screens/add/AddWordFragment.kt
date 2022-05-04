@@ -8,10 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.words.R
-import com.example.words.database.WordDao
 import com.example.words.database.WordDatabase
 import com.example.words.databinding.FragmentAddWordBinding
-import com.example.words.screens.overview.DictWordsViewModel
+import com.google.android.material.snackbar.Snackbar
+
 
 class AddWordFragment : Fragment() {
 
@@ -50,11 +50,17 @@ class AddWordFragment : Fragment() {
 
 
 
+
+
         // --------Save in database
         // TODO setup a listener for the add button. The listener code should call a function
         // on the view model to add the word to the database.
         binding.addWord.setOnClickListener {
-            viewModel.addWord()
+           viewModel.addWord()
+
+            val snack = Snackbar.make(it,"Word Saved Successfully",Snackbar.LENGTH_LONG)
+            snack.show()
+            findNavController().navigate(R.id.action_addWordFragment_to_searchWordFragment)
         }
 
         binding.viewModel = ViewModelProvider(this, viewModelFactory).get(AddWordViewModel::class.java)

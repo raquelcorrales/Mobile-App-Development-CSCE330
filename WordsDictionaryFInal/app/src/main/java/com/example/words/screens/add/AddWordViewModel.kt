@@ -6,8 +6,19 @@ import androidx.lifecycle.*
 import com.example.words.entity.Word
 import com.example.words.database.WordDao
 import com.example.words.database.WordDatabase
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.launch
-
+import android.view.View
+import android.view.ViewGroup
+import android.os.Bundle
+import android.view.LayoutInflater
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.words.R
+import com.example.words.databinding.FragmentAddWordBinding
+import com.example.words.screens.overview.DictWordsViewModel
+import kotlinx.coroutines.yield
 
 
 enum class AddWordStatus{
@@ -22,16 +33,56 @@ private var _addWordStatus = MutableLiveData<AddWordStatus>()
 val addWordStatus: LiveData<AddWordStatus>
     get() = _addWordStatus
 
-fun addWord(){
+    fun addWord(){
+
+        viewModelScope.launch {
+            try{
+                if(wordDao.wordExists(word.id))
+                {
+
+                    _addWordStatus.value = AddWordStatus.DUPLICATE
+
+                }
+                else{
+                    wordDao.insertWord(word)
+                    _addWordStatus.value = AddWordStatus.SUCCESS
+
+                }
+            }
+            catch (e: Exception){
+                Log.e(TAG, "ERROR, inserting word ${e.printStackTrace()}")
+                _addWordStatus.value = AddWordStatus.FAILED
+
+            }
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+/*fun addWord(): Int{
+    var i: Int = 0
     viewModelScope.launch {
         try{
             if(wordDao.wordExists(word.id))
             {
+                i = 0
                 _addWordStatus.value = AddWordStatus.DUPLICATE
+                val snack = Snackbar.make(it,"Word saved successfully",Snackbar.LENGTH_LONG)
+                snack.show()
+
+
             }
             else{
                 wordDao.insertWord(word)
                 _addWordStatus.value = AddWordStatus.SUCCESS
+                i = 0
 
             }
         }
@@ -41,7 +92,8 @@ fun addWord(){
 
         }
     }
+ return i
 }
 
-}
+}*/
 

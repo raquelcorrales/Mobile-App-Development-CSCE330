@@ -26,7 +26,10 @@ import com.example.android.marsrealestate.network.MarsProperty
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
-enum class MarsApiStatus { LOADING, ERROR, DONE }
+enum class MarsApiStatus {
+    LOADING,
+    ERROR,
+    DONE }
 
 /**
  * The [ViewModel] that is attached to the [OverviewFragment].
