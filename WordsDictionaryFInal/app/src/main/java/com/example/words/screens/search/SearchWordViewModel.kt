@@ -9,6 +9,7 @@ import com.example.words.R
 import com.example.words.database.WordDao
 import com.example.words.entity.Word
 import com.example.words.network.DictionaryApi
+import com.example.words.network.parseJsonToStringList
 import com.example.words.network.parseJsonToWord
 import com.google.android.material.textfield.TextInputLayout
 import kotlinx.coroutines.launch
@@ -40,6 +41,7 @@ class SearchWordViewModel(private val dao: WordDao) : ViewModel() {
         }
 
         viewModelScope.launch {
+            // call dao.wordExists(searchWord)
             var response = DictionaryApi.retrofitService.getWord(searchWord)
             Log.d(TAG, response.body()!!.substring(0, 30))
             val jsonString = response.body()!!
@@ -48,6 +50,7 @@ class SearchWordViewModel(private val dao: WordDao) : ViewModel() {
                 _wordDef.value = parseJsonToWord(searchWord, jsonString)
             } else {
                 Log.d(TAG, "TODO parseToStringList")
+                _suggestedWords.value = parseJsonToStringList(jsonString)
             }
         }
     }

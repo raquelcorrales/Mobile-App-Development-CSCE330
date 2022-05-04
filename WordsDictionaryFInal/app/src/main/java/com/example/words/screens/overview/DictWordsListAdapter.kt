@@ -30,12 +30,10 @@ class DictWordsListAdapter : ListAdapter<Word, DictWordsListAdapter.WordViewHold
 
     companion object DiffCallback : DiffUtil.ItemCallback<Word>() {
         override fun areItemsTheSame(oldItem: Word, newItem: Word): Boolean {
-            TODO("Review this")
             return oldItem === newItem
         }
 
         override fun areContentsTheSame(oldItem: Word, newItem: Word): Boolean {
-            TODO("Review this")
             return oldItem.id == newItem.id
         }
     }

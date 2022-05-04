@@ -68,7 +68,7 @@ class SearchWordFragment : Fragment() {
         // returned by the API we can display this on the search word screen.
         viewModel.suggestedWords.observe(this, Observer { suggestedWords ->
             if (null != suggestedWords) {
-
+                // create the adapter for the recycler view to show the list of suggested words.
             }
         })
 

@@ -49,7 +49,9 @@ class AddWordFragment : Fragment() {
         }
 
 
-
+        viewModel.addWordStatus.observe(this.viewLifecycleOwner, {
+            viewModel.addWordStatus.value
+        })
 
 
         // --------Save in database
