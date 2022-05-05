@@ -63,37 +63,3 @@ val addWordStatus: LiveData<AddWordStatus>
 
 
 
-
-
-
-/*fun addWord(): Int{
-    var i: Int = 0
-    viewModelScope.launch {
-        try{
-            if(wordDao.wordExists(word.id))
-            {
-                i = 0
-                _addWordStatus.value = AddWordStatus.DUPLICATE
-                val snack = Snackbar.make(it,"Word saved successfully",Snackbar.LENGTH_LONG)
-                snack.show()
-
-
-            }
-            else{
-                wordDao.insertWord(word)
-                _addWordStatus.value = AddWordStatus.SUCCESS
-                i = 0
-
-            }
-        }
-        catch (e: Exception){
-            Log.e(TAG, "ERROR, inserting word ${e.printStackTrace()}")
-            _addWordStatus.value = AddWordStatus.FAILED
-
-        }
-    }
- return i
-}
-
-}*/
-

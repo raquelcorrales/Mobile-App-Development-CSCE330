@@ -85,7 +85,7 @@ class PhotoGridAdapter( private val onClickListener: OnClickListener ) :
      * associated with the current item to the [onClick] function.
      * @param clickListener lambda that will be called with the current [MarsProperty]
      */
-    class OnClickListener(val clickListener: (marsProperty:MarsProperty) -> Unit) {
+    class OnClickListener(val clickListener: (Property:MarsProperty) -> Unit) {
         fun onClick(marsProperty:MarsProperty) = clickListener(marsProperty)
     }
 }

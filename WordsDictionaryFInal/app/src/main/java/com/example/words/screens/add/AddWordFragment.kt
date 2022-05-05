@@ -58,10 +58,27 @@ class AddWordFragment : Fragment() {
         // TODO setup a listener for the add button. The listener code should call a function
         // on the view model to add the word to the database.
         binding.addWord.setOnClickListener {
-           viewModel.addWord()
+            viewModel.addWord()
 
             val snack = Snackbar.make(it,"Word Saved Successfully",Snackbar.LENGTH_LONG)
             snack.show()
+
+            // Here is the code that I was trying to implement to make the difference if
+            // the word is already save
+
+            /*viewModel.addWordStatus.observe(this.viewLifecycleOwner, {
+                if(viewModel.addWordStatus.value == AddWordStatus.DUPLICATE){
+                    val snack = Snackbar.make( binding.wordId,
+                        "Word already in the database",Snackbar.LENGTH_LONG)
+                    snack.show()
+                }
+                else{
+                    val snack = Snackbar.make(binding.wordId,"Word Saved Successfully",Snackbar.LENGTH_LONG)
+                    snack.show()
+                }
+            }) */
+
+
             findNavController().navigate(R.id.action_addWordFragment_to_searchWordFragment)
         }
 

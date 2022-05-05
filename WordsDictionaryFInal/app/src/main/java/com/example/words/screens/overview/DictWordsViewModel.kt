@@ -1,12 +1,18 @@
 package com.example.words.screens.overview
 
 import android.app.Application
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.viewModelScope
 import com.example.words.database.WordDao
 import com.example.words.database.WordDatabase
 import com.example.words.entity.Word
+import com.example.words.network.DictionaryApi
+import com.example.words.network.parseJsonToStringList
+import com.example.words.network.parseJsonToWord
+import kotlinx.coroutines.launch
 
 
 enum class WordsFilter {
@@ -41,6 +47,13 @@ class DictWordsViewModel(
             else -> dao.getInactiveWords()
         }
         _currentFilter.value = filter
+    }
+
+    fun inactivetheword(word: Word){
+        viewModelScope.launch {
+            word.active = !word.active
+            dao.updateWord(word)
+            }
     }
 
 }

@@ -2,18 +2,20 @@ package com.example.words.screens.overview
 
 import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.provider.UserDictionary
 import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewModelScope
 import androidx.navigation.fragment.findNavController
 import com.example.words.R
 import com.example.words.database.WordDatabase
 import com.example.words.databinding.FragmentDictWordsBinding
 import com.example.words.database.WordDao
 import com.example.words.entity.Word
-
-
+import com.example.words.screens.overview.DictWordsListAdapter
+import kotlinx.coroutines.launch
 
 
 class DictWordsFragment : Fragment() {
@@ -40,12 +42,18 @@ class DictWordsFragment : Fragment() {
         binding.lifecycleOwner = this.viewLifecycleOwner
 
         binding.viewModel = viewModel
-        val adapter = DictWordsListAdapter()
+
+        val adapter = DictWordsListAdapter(DictWordsListAdapter.OnClickListener {
+            viewModel.inactivetheword(it)
+        })
+
         viewModel.dictWords.observe(this.viewLifecycleOwner){list ->
             Log.d(TAG, "Observed word list change")
             adapter.submitList(list)
         }
         binding.dictWords.adapter = adapter
+
+
 
         viewModel.currentFilter.observe(this.viewLifecycleOwner) {
             // A new LiveData object has to be observed because the filter
@@ -62,26 +70,13 @@ class DictWordsFragment : Fragment() {
 
 
 
-   /* *//** Called when the user touches the button *//*
-    fun sendMessage(view: View, word: Word) {
-        word.active = false
-    }*/
-
-
-    /**
-     * Inflates the overflow menu that contains filtering options.
-     */
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.overflow_menu, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
 
 
-    /**
-     * Updates the filter in the [OverviewViewModel] when the menu items are selected from the
-     * overflow menu.
-     */
-  override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.add_word_menu) {
             findNavController()
                 .navigate(DictWordsFragmentDirections.actionDictWordsFragmentToSearchWordFragment())
@@ -95,6 +90,4 @@ class DictWordsFragment : Fragment() {
             )
         }
         return true
-  } }
-
-
+    } }
